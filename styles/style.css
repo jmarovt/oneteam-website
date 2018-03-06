@@ -22,13 +22,17 @@ h5 {
 }
 h1 {
   font-size: 1.77rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 h3 {
+  font-size: 1.33rem;
+}
+h4 {
   font-size: 1rem;
 }
 .body-section {
   padding: 5% 4%;
+  background-color: #fdfdfd;
   text-align: center;
 }
 .body-section + .body-section {
@@ -86,6 +90,9 @@ h3 {
   align-items: center;
   flex-basis: 0;
   flex-grow: 1;
+}
+#hero .hero-main .hero-left .hero-text {
+  width: 80%;
 }
 #hero .hero-main .hero-left .cta {
   display: inline-block;
@@ -154,7 +161,7 @@ h3 {
 .icon-section {
   width: 1.77rem;
   height: 1.77rem;
-  margin-right: 0.563rem;
+  margin-right: 0.75rem;
 }
 .icon-section .circle {
   display: flex;
@@ -166,49 +173,75 @@ h3 {
   background-color: #4A5CF9;
   color: white;
   border-radius: 50%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
-.text-section h3 {
-  margin-top: .2rem;
+.icon-section .circle.green {
+  background-color: #1be566;
+  opacity: 0.7;
+}
+.text-section h3 .less-important {
+  font-weight: 400;
 }
 .text-section p {
   line-height: 1.5;
 }
 #how-it-works .three-steps {
-  display: flex;
-  justify-content: space-between;
   text-align: left;
   margin: 0 auto;
   margin-top: 3.157rem;
 }
 #how-it-works .three-steps .step {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+}
+#how-it-works .three-steps .step .step-text {
   flex-basis: 0;
   flex-grow: 1;
 }
+#how-it-works .three-steps .step .step-visual {
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+#how-it-works .three-steps .step .step-visual .feature-image {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: white;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+#how-it-works .three-steps .step .step-visual .feature-image.set-goals {
+  width: 300px;
+}
+#how-it-works .three-steps .step .step-visual .feature-image.publish-goals {
+  width: 380px;
+}
+#how-it-works .three-steps .step .step-visual .feature-image.report {
+  width: 441px;
+}
 #how-it-works .three-steps .step .feature {
   display: flex;
+  width: 90%;
 }
 #how-it-works .three-steps .step .feature.benefit {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  padding: 1.77rem;
-  background-color: white;
+  width: 89%;
+  margin-left: calc(2.52rem);
 }
 #how-it-works .three-steps .step .feature p {
   margin-bottom: 0;
-}
-#how-it-works .three-steps .step .fa-check {
-  color: #32E875;
-  margin-right: 8px;
 }
 #how-it-works .three-steps .step .chevron {
   display: block;
   flex: 0 0 100%;
   width: 26px;
-  margin: 1.77rem auto 2.369rem auto;
-  opacity: 0.3;
+  margin: 1.77rem auto;
+  opacity: 0.2;
 }
 #how-it-works .step + .step {
-  margin-left: 4%;
+  margin-top: 10%;
 }
 #faq .faq-item {
   width: 45%;
@@ -269,7 +302,7 @@ footer a:hover {
 }
 @media only screen and (max-width: 768px) {
   .hidden-md {
-    display: none;
+    display: none !important;
   }
   .body-section {
     padding: 8%;
@@ -280,10 +313,16 @@ footer a:hover {
   #hero .menu {
     display: none;
   }
+  #hero .chevron {
+    margin-top: 2.369rem;
+  }
   #hero .hero-main {
     display: block;
   }
   #hero .hero-main h2 {
+    width: 100%;
+  }
+  #hero .hero-main .hero-left .hero-text {
     width: 100%;
   }
   #hero .hero-main .hero-left .cta {
@@ -296,11 +335,18 @@ footer a:hover {
     padding-right: 0;
     text-align: center;
   }
-  #hero .chevron {
-    margin-top: 2.369rem;
-  }
-  #how-it-works .three-steps {
+  #how-it-works .three-steps .step {
     display: block;
+    width: 100%;
+  }
+  #how-it-works .three-steps .step .step-visual {
+    margin-top: 1.77rem;
+  }
+  #how-it-works .three-steps .step .step-visual .feature-image {
+    max-width: 90%;
+  }
+  #how-it-works .three-steps .step .step-visual .feature-image.publish-goals {
+    width: 100%;
   }
   #how-it-works .three-steps .step + .step {
     margin: 3.157rem 0 0 0;
@@ -310,5 +356,10 @@ footer a:hover {
   }
   #faq .faq-item {
     width: 100%;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  .hidden-lg {
+    display: none !important;
   }
 }

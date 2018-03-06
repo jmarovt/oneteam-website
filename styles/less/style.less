@@ -51,22 +51,26 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: @font-size-lg;
-  font-weight: @font-weight-normal;
+  font-weight: @font-weight-bold;
 }
 
 h3 {
+  font-size: @font-size-md;
+}
+
+h4 {
   font-size: @font-size-base;
 }
 
 .body-section {
   padding: @padding-section @padding-main;
+  background-color: darken(@color-white, 0.6%);
   text-align: center;
   
   &+ .body-section {
     border-top: 1px solid darken(@color-white, 10%);
   }
 }
-
 .drift-open-chat {
   cursor: pointer;
 }
@@ -129,6 +133,10 @@ h3 {
       align-items: center;
       flex-basis: 0;
       flex-grow: 1;
+
+      .hero-text {
+        width: 80%;
+      }
 
       .cta {
         display: inline-block;
@@ -209,7 +217,7 @@ h3 {
 .icon-section {
   width: @font-size-lg;
   height: @font-size-lg;
-  margin-right: @font-size-xs;
+  margin-right: @font-size-sm;
 
   .circle {
     display: flex;
@@ -221,12 +229,21 @@ h3 {
     background-color: @color-blue;
     color: @color-white;
     border-radius: 50%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+
+    &.green {
+      background-color: darken(@color-green, 5%);
+      opacity: 0.7;
+    }
   }
 }
 
 .text-section {
   h3 {
-    margin-top: .2rem;
+
+    .less-important {
+      font-weight: @font-weight-normal;
+    }
   }
 
   p {
@@ -237,24 +254,55 @@ h3 {
 #how-it-works {
 
   .three-steps {
-    display: flex;
-    justify-content: space-between;
     text-align: left;
     margin: 0 auto;
     margin-top: @font-size-xxl;
 
     .step {
-      flex-basis: 0;
-      flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
+      width: 85%;
+      margin: 0 auto;
+
+      .step-text {
+        flex-basis: 0;
+        flex-grow: 1;
+      }
+
+      .step-visual {
+        flex-basis: 0;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+
+        .feature-image {
+          box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+          padding: @font-size-base;
+          background-color: @color-white;
+          border-radius: 3px;
+          margin: 0 auto;
+
+          &.set-goals {
+            width: 300px;
+          }
+
+          &.publish-goals {
+            width: 380px;
+          }
+
+          &.report {
+            width: 441px;
+          }
+        }
+      }
 
       .feature {
         display: flex;
+        width: 90%;
 
         &.benefit {
-          box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-          border-radius: 3px;
-          padding: @font-size-lg;
-          background-color: @color-white;
+          width: 89%;
+          margin-left: calc(@font-size-lg + @font-size-sm);
         }
 
         p {
@@ -262,24 +310,19 @@ h3 {
         }
       }
 
-      .fa-check {
-        color: @color-green;
-        margin-right: 8px;
-      }
-
       .chevron {
         display: block;
         flex: 0 0 100%;
         width: 26px;
-        margin: @font-size-lg auto @font-size-xl auto;
-        opacity: 0.3;
+        margin: @font-size-lg auto;
+        opacity: 0.2;
       }
 
     }
   }
 
   .step + .step {
-    margin-left: 4%;
+    margin-top: 10%;
   }
 }
 
@@ -354,7 +397,7 @@ footer {
 @media only screen  and (max-width: @tablet) {
 
   .hidden-md {
-    display: none;
+    display: none !important;
   }
 
   .body-section {
@@ -367,6 +410,10 @@ footer {
     .menu {
       display: none;
     }
+
+    .chevron {
+      margin-top: @font-size-xl;
+    }
   
     .hero-main {
       display: block;
@@ -376,6 +423,10 @@ footer {
       }
 
       .hero-left {
+        .hero-text {
+          width: 100%;
+        }
+
         .cta {
           width: 100%;
           margin-bottom: @font-size-xl;
@@ -389,15 +440,26 @@ footer {
         }
       }
     }
-
-    .chevron {
-      margin-top: @font-size-xl;
-    }
   }
 
   #how-it-works {
     .three-steps {
-      display: block;
+      .step {
+        display: block;
+        width: 100%;
+
+        .step-visual {
+          margin-top: @font-size-lg;
+
+          .feature-image {
+            max-width: 90%;
+
+            &.publish-goals {
+              width: 100%;
+            }
+          }
+        }
+      }
 
       .step + .step {
         margin: @font-size-xxl 0 0 0;
@@ -413,5 +475,11 @@ footer {
     .faq-item {
       width: 100%;
     }
+  }
+}
+
+@media only screen  and (min-width: @desktop-m) {
+  .hidden-lg {
+    display: none !important;
   }
 }
