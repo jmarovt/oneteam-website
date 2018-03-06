@@ -8,8 +8,7 @@
 // Main dimensions
 @padding-main: 4%;
 @padding-section: 5%;
-@padding-section-max: 7.5%;
-
+@padding-main-mobile: 8%;
 
 // Font sizes
 @font-size-root: 16px;
@@ -22,9 +21,14 @@
 @font-size-xxl: 3.157rem;
 
 // Font weights
-
 @font-weight-normal: 400;
 @font-weight-bold: 600;
+
+// Screen Sizes
+@phone: 440px;
+@tablet: 768px;
+@desktop-m: 1224px;
+@desktop-l: 1824px;
 
 html, body {
   margin: 0;
@@ -55,7 +59,7 @@ h3 {
 }
 
 .body-section {
-  padding: @padding-section 0;
+  padding: @padding-section @padding-main;
   text-align: center;
   
   &+ .body-section {
@@ -63,14 +67,11 @@ h3 {
   }
 }
 
-#main-body {
-  padding: 0 @padding-main;
-  background-color: darken(@color-white, 0.6%);
-}
-
 .drift-open-chat {
   cursor: pointer;
 }
+
+// Sections
 
 #hero {
   padding: @padding-main;
@@ -119,12 +120,15 @@ h3 {
     margin:  0 0 0;
     display: flex;
     justify-content: space-between;
-    margin: @padding-section-max 0;
+    margin: @padding-section 0;
 
     .hero-left {
+      margin-top: @font-size-xl;
       text-align: left;
       display: flex;
       align-items: center;
+      flex-basis: 0;
+      flex-grow: 1;
 
       .cta {
         display: inline-block;
@@ -159,6 +163,11 @@ h3 {
         opacity: 0.8;
         text-align: center;
       }
+    }
+
+    .hero-right {
+      flex-basis: 0;
+      flex-grow: 1;
     }
 
     h2 {
@@ -297,8 +306,8 @@ h3 {
 footer {
   background-image: linear-gradient(to right, @color-blue, @color-violet);
   text-align: center;
-  font-size: @font-size-base;
-  padding: @font-size-base 0;
+  font-size: @font-size-sm;
+  padding: @font-size-sm 0;
   color: fadeout(@color-white, 20%);
 
   a {
@@ -337,5 +346,72 @@ footer {
   100% {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
+  }
+}
+
+// Responsive
+
+@media only screen  and (max-width: @tablet) {
+
+  .hidden-md {
+    display: none;
+  }
+
+  .body-section {
+    padding: @padding-main-mobile;
+  }
+
+  #hero {
+    padding: @padding-main-mobile;
+
+    .menu {
+      display: none;
+    }
+  
+    .hero-main {
+      display: block;
+
+      h2 {
+        width: 100%;
+      }
+
+      .hero-left {
+        .cta {
+          width: 100%;
+          margin-bottom: @font-size-xl;
+
+          .hero-cta {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .chevron {
+      margin-top: @font-size-xl;
+    }
+  }
+
+  #how-it-works {
+    .three-steps {
+      display: block;
+
+      .step + .step {
+        margin: @font-size-xxl 0 0 0;
+      }
+
+      .chevron {
+        margin: @font-size-lg auto !important;
+      }
+    } 
+  }
+
+  #faq {
+    .faq-item {
+      width: 100%;
+    }
   }
 }

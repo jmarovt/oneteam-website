@@ -28,15 +28,11 @@ h3 {
   font-size: 1rem;
 }
 .body-section {
-  padding: 5% 0;
+  padding: 5% 4%;
   text-align: center;
 }
 .body-section + .body-section {
   border-top: 1px solid #e6e6e6;
-}
-#main-body {
-  padding: 0 4%;
-  background-color: #fdfdfd;
 }
 .drift-open-chat {
   cursor: pointer;
@@ -81,12 +77,15 @@ h3 {
   margin: 0 0 0;
   display: flex;
   justify-content: space-between;
-  margin: 7.5% 0;
+  margin: 5% 0;
 }
 #hero .hero-main .hero-left {
+  margin-top: 2.369rem;
   text-align: left;
   display: flex;
   align-items: center;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 #hero .hero-main .hero-left .cta {
   display: inline-block;
@@ -116,6 +115,10 @@ h3 {
   font-size: 0.75rem;
   opacity: 0.8;
   text-align: center;
+}
+#hero .hero-main .hero-right {
+  flex-basis: 0;
+  flex-grow: 1;
 }
 #hero .hero-main h2 {
   font-size: 1rem;
@@ -225,8 +228,8 @@ h3 {
 footer {
   background-image: linear-gradient(to right, #4A5CF9, #46237A);
   text-align: center;
-  font-size: 1rem;
-  padding: 1rem 0;
+  font-size: 0.75rem;
+  padding: 0.75rem 0;
   color: rgba(255, 255, 255, 0.8);
 }
 footer a {
@@ -262,5 +265,50 @@ footer a:hover {
   100% {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hidden-md {
+    display: none;
+  }
+  .body-section {
+    padding: 8%;
+  }
+  #hero {
+    padding: 8%;
+  }
+  #hero .menu {
+    display: none;
+  }
+  #hero .hero-main {
+    display: block;
+  }
+  #hero .hero-main h2 {
+    width: 100%;
+  }
+  #hero .hero-main .hero-left .cta {
+    width: 100%;
+    margin-bottom: 2.369rem;
+  }
+  #hero .hero-main .hero-left .cta .hero-cta {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  #hero .chevron {
+    margin-top: 2.369rem;
+  }
+  #how-it-works .three-steps {
+    display: block;
+  }
+  #how-it-works .three-steps .step + .step {
+    margin: 3.157rem 0 0 0;
+  }
+  #how-it-works .three-steps .chevron {
+    margin: 1.77rem auto !important;
+  }
+  #faq .faq-item {
+    width: 100%;
   }
 }
