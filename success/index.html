@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oneteam - Error</title>
+    <meta name="description"
+          content="Something went wrong">
+    <link rel="stylesheet"
+          href="../styles/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Start of Async Drift Code -->
+    <script>
+      !function() {
+        var t;
+        if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+        t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n;
+            return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e, n, o, i;
+          e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+          n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+        });
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('ta6xpdzcevuv');
+    </script>
+    <!-- End of Async Drift Code -->
+    <script>
+      (function() {
+        /* Add this class to any elements you want to use to open Drift.
+          *
+          * Examples:
+          * - <a class="drift-open-chat">Questions? We're here to help!</a>
+          * - <button class="drift-open-chat">Chat now!</button>
+          *
+          * You can have any additional classes on those elements that you
+          * would ilke.
+          */
+        var DRIFT_CHAT_SELECTOR = '.drift-open-chat'
+        /* http://youmightnotneedjquery.com/#ready */
+        function ready(fn) {
+          if (document.readyState != 'loading') {
+            fn();
+          } else if (document.addEventListener) {
+            document.addEventListener('DOMContentLoaded', fn);
+          } else {
+            document.attachEvent('onreadystatechange', function() {
+              if (document.readyState != 'loading')
+                fn();
+            });
+          }
+        }
+        /* http://youmightnotneedjquery.com/#each */
+        function forEachElement(selector, fn) {
+          var elements = document.querySelectorAll(selector);
+          for (var i = 0; i < elements.length; i++)
+            fn(elements[i], i);
+        }
+        function openSidebar(driftApi, event) {
+          event.preventDefault();
+          driftApi.sidebar.open();
+          return false;
+        }
+        ready(function() {
+          drift.on('ready', function(api) {
+            var handleClick = openSidebar.bind(this, api)
+            forEachElement(DRIFT_CHAT_SELECTOR, function(el) {
+              el.addEventListener('click', handleClick);
+            });
+          });
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <section id="hero" class="thin">
+      <header>
+        <div class="nav">
+          <a href="../">
+          <img src="../images/oneteam_logo_2.png"
+              class="logo"></a>
+          <ul class="menu">
+            <li><a href="../">Back to Homepage →</a></li>
+          </ul>
+        </div>
+      </header>
+    </section>
+      <section class="status-feedback body-section">
+        <h2>👍 Great, you’re all set here!</h2>
+        <p><strong>Important:</strong> Please check Slack for the final step of the setup.</p>
+        <p class="sub-explanation">(You'll select your team and your desired goal channel name.)</p>
+
+      </section>
+      <section class="status-feedback body-section white">
+          <h3>See how Oneteam works below 👇</h3>
+          <div class="faq-item">
+              <div class="icon-section">
+                <div class="circle number">
+                  1
+                </div>
+              </div>
+              <div class="text-section">
+                <h4>Each Monday we send the users of your team a private Slack message to set (up to 3) main goals for the week.</h4>
+                
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="icon-section">
+                <div class="circle number">
+                  2
+                </div>
+              </div>
+              <div class="text-section">
+                <h4>The goals of each team member are posted in the goals channel (you create the channel during the setup of Oneteam).</h4>
+                
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="icon-section">
+                <div class="circle number">
+                  3
+                </div>
+              </div>
+              <div class="text-section">
+                <h4>On Wednesday we ask each of your team members to do a quick check-in and set the status for each of their goals.</h4>
+
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="icon-section">
+                <div class="circle number">
+                  4
+                </div>
+              </div>
+              <div class="text-section">
+                <h4>The statuses and potential blockers are posted in the common goals channel.</h4>
+                
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="icon-section">
+                <div class="circle number">
+                  5
+                </div>
+              </div>
+              <div class="text-section">
+                <h4>On Friday afternoon we ask each of your team members to do a quick final report on their goals.</h4>
+                
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="icon-section">
+                <div class="circle number">
+                  6
+                </div>
+              </div>
+              <div class="text-section">
+                <h4>The final reports are posted in the common goals channel as well.</h4>
+                
+              </div>
+            </div>
+  
+      </section>
+      
+    <script type="text/javascript">
+      var targetOffset, currentPosition,
+      body = document.body,
+      buttons = document.getElementsByClassName('smooth-scroll'),
+      animateTime = 900;
+
+      function getPageScroll() {
+        var yScroll;
+
+        if (window.pageYOffset) {
+          yScroll = window.pageYOffset;
+        } else if (document.documentElement && document.documentElement.scrollTop) {
+          yScroll = document.documentElement.scrollTop;
+        } else if (document.body) {
+          yScroll = document.body.scrollTop;
+        }
+        return yScroll;
+      }
+      
+      for(var i = 0; i < buttons.length; i++){
+        buttons[i].addEventListener('click', function (event) {
+          
+        targetOffset = document.getElementById(event.target.hash.substr(1)).offsetTop;
+        currentPosition = getPageScroll();
+
+        body.classList.add('in-transition');
+        body.style.WebkitTransform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+        body.style.MozTransform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+        body.style.transform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+
+        window.setTimeout(function () {
+          body.classList.remove('in-transition');
+          body.style.cssText = "";
+          window.scrollTo(0, targetOffset);
+        }, animateTime);
+
+        event.preventDefault();
+
+        }, false);
+      }
+      
+    </script>
+  </body>
+</html>
