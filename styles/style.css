@@ -22,13 +22,14 @@ h5 {
 }
 h1 {
   font-size: 1.77rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 h3 {
   font-size: 1.33rem;
 }
 h4 {
   font-size: 1rem;
+  margin-top: .2rem;
 }
 .body-section {
   padding: 5% 4%;
@@ -346,6 +347,9 @@ footer a:hover {
     max-width: 90%;
   }
   #how-it-works .three-steps .step .step-visual .feature-image.publish-goals {
+    width: 100%;
+  }
+  #how-it-works .three-steps .step .feature {
     width: 100%;
   }
   #how-it-works .three-steps .step + .step {
