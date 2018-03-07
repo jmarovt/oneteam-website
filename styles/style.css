@@ -21,7 +21,7 @@ h5 {
   margin: 0;
 }
 h1 {
-  font-size: 1.77rem;
+  font-size: 2.369rem;
   font-weight: 600;
 }
 h3 {
@@ -165,7 +165,7 @@ h4 {
 }
 #hero .hero-main h2 {
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
   font-weight: 400;
   width: 90%;
   opacity: 0.8;
@@ -347,17 +347,20 @@ footer a:hover {
   #hero .hero-main {
     display: block;
   }
+  #hero .hero-main h1 {
+    font-size: 1.77rem;
+  }
   #hero .hero-main h2 {
     width: 100%;
   }
   #hero .hero-main .hero-left .hero-text {
     width: 100%;
   }
-  #hero .hero-main .hero-left .cta {
+  .cta {
     width: 100%;
     margin-bottom: 2.369rem;
   }
-  #hero .hero-main .hero-left .cta .hero-cta {
+  .cta .signup-cta {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
