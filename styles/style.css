@@ -136,6 +136,13 @@ h4 {
   opacity: 0.8;
   margin-top: 1rem;
 }
+#hero .hero-main h2 a {
+  color: white;
+  text-decoration: none;
+}
+#hero .hero-main h2 a:hover {
+  text-decoration: underline;
+}
 #hero .chevron {
   display: block;
   width: 26px;
