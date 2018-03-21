@@ -291,17 +291,19 @@ h4 {
   width: 300px;
 }
 #how-it-works .three-steps .step .step-visual .feature-image.publish-goals {
-  width: 380px;
+  width: 300px;
 }
 #how-it-works .three-steps .step .step-visual .feature-image.report {
-  width: 441px;
+  width: 300px;
 }
 #how-it-works .three-steps .step .feature {
   display: flex;
   width: 90%;
+  margin-top: 2.369rem;
 }
 #how-it-works .three-steps .step .feature.benefit {
   width: 89%;
+  margin-top: 1rem;
   margin-left: calc(2.52rem);
 }
 #how-it-works .three-steps .step .feature p {
