@@ -13,6 +13,7 @@
 
 // Font sizes
 @font-size-root: 16px;
+@font-size-xxs: 0.423rem;
 @font-size-xs: 0.563rem;
 @font-size-sm: 0.75rem;
 @font-size-base: 1rem;
@@ -20,6 +21,7 @@
 @font-size-lg: 1.77rem;
 @font-size-xl: 2.369rem;
 @font-size-xxl: 3.157rem;
+@font-size-xxxl: 4.2rem;
 
 // Font weights
 @font-weight-normal: 400;
@@ -32,7 +34,6 @@
 @desktop-l: 1824px;
 
 // Generic components
-
 html, body {
   margin: 0;
   color: @color-dark;
@@ -67,8 +68,21 @@ h4 {
   line-height: 1.4;
 }
 
+h5 {
+  font-size: @font-size-base;
+  color: fadeOut(@color-dark, 40%);
+  margin-bottom: @font-size-xxs;
+}
+
+hr {
+  width: 12%;
+  border: 0;
+  border-top: 1px solid fadeOut(@color-dark, 80%);
+  margin: @font-size-xl auto @font-size-xxxl auto;
+}
+
 .body-section {
-  padding: @padding-section @padding-main;
+  padding: @font-size-xxxl 0;
   background-color: darken(@color-white, 0.6%);
   text-align: center;
   
@@ -150,7 +164,7 @@ h4 {
 // Sections
 
 #hero {
-  padding: @padding-main;
+  padding: @font-size-xxxl;
   text-align: center;
   color: @color-white;
   background-image: linear-gradient(to bottom right, @color-blue, @color-violet);
@@ -201,22 +215,16 @@ h4 {
   }
 
   .hero-main {
-    margin:  0 0 0;
-    display: flex;
-    justify-content: space-between;
-    margin: @padding-section 0;
+    margin: @font-size-xxxl 0;
 
     .hero-left {
-      margin-top: @font-size-xl;
-      text-align: left;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 600px;
       display: flex;
       align-items: center;
       flex-basis: 0;
       flex-grow: 1;
-
-      .hero-text {
-        width: 90%;
-      }
 
       .cta {
         display: inline-block;
@@ -239,9 +247,9 @@ h4 {
       font-size: @font-size-base;
       line-height: 1.5;
       font-weight: @font-weight-normal;
-      width: 90%;
+      width: 80%;
       opacity: 0.8;
-      margin-top: @font-size-base;
+      margin: @font-size-base auto 0 auto;
 
       a {
         color: @color-white;
@@ -515,7 +523,6 @@ footer {
 
   .cta {
     width: 100%;
-    margin-bottom: @font-size-xl;
 
     .signup-cta {
       width: 100%;
