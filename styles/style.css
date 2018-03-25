@@ -35,8 +35,8 @@ h4 {
 h5 {
   font-size: 1rem;
   color: rgba(64, 63, 76, 0.6);
-  margin-bottom: 0.423rem;
   letter-spacing: 0.04rem;
+  line-height: 1.4;
 }
 hr {
   width: 8%;
@@ -60,6 +60,9 @@ hr {
 }
 .drift-open-chat {
   cursor: pointer;
+}
+.hidden-lg {
+  display: none !important;
 }
 .signup-cta {
   margin-top: 2.369rem;
@@ -122,8 +125,8 @@ hr {
   align-items: center;
 }
 #hero .nav .logo {
-  width: 110px;
-  height: 15px;
+  width: 114px;
+  height: 16px;
   text-align: left;
 }
 #hero .nav .menu {
@@ -314,6 +317,7 @@ hr {
   margin-left: calc(2.52rem);
 }
 #how-it-works .three-steps .step .feature p {
+  margin-top: 0.423rem;
   margin-bottom: 0;
   opacity: 0.9;
   line-height: 1.6;
@@ -374,6 +378,9 @@ footer a:hover {
   .hidden-md {
     display: none !important;
   }
+  .hidden-lg {
+    display: flex !important;
+  }
   .body-section {
     padding: 8%;
   }
@@ -425,9 +432,6 @@ footer a:hover {
   #how-it-works .three-steps .step .step-visual .feature-image {
     max-width: 90%;
   }
-  #how-it-works .three-steps .step .step-visual .feature-image.publish-goals {
-    width: 100%;
-  }
   #how-it-works .three-steps .step .feature {
     width: 100%;
   }
@@ -439,10 +443,5 @@ footer a:hover {
   }
   .faq-item {
     width: 100%;
-  }
-}
-@media only screen and (min-width: 1224px) {
-  .hidden-lg {
-    display: none !important;
   }
 }
