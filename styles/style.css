@@ -316,6 +316,15 @@ hr {
   margin-top: 1rem;
   margin-left: calc(2.52rem);
 }
+#how-it-works .three-steps .step .feature.benefit h4 {
+  background: url('../images/highlight-green.svg') center center no-repeat;
+  background-size: 100% 3.157rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  display: inline;
+}
 #how-it-works .three-steps .step .feature p {
   margin-top: 0.423rem;
   margin-bottom: 0;
