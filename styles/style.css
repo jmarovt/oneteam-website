@@ -39,9 +39,9 @@ h5 {
   line-height: 1.4;
 }
 hr {
-  width: 8%;
+  width: 6%;
   border: 0;
-  border-top: 1px solid rgba(64, 63, 76, 0.3);
+  border-top: 2px solid rgba(64, 63, 76, 0.2);
   margin: 2.369rem auto 4.2rem auto;
 }
 .body-section {
@@ -317,7 +317,7 @@ hr {
   margin-left: calc(2.52rem);
 }
 #how-it-works .three-steps .step .feature.benefit h4 {
-  background: url('../images/highlight-green.svg') center center no-repeat;
+  background: url('../images/smudge.svg') center center no-repeat;
   background-size: 100% 3.157rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
