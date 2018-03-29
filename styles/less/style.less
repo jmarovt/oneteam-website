@@ -31,7 +31,7 @@
 // Screen Sizes
 @phone: 440px;
 @tablet: 768px;
-@desktop-m: 1224px;
+@desktop-m: 1300px;
 @desktop-l: 1824px;
 
 // Generic components
@@ -79,7 +79,7 @@ h5 {
 hr {
   width: 6%;
   border: 0;
-  border-top: 2px solid fadeOut(@color-dark, 0%);
+  border-top: 2px solid fadeOut(@color-dark, 80%);
   margin: @font-size-xl auto @font-size-xxxl auto;
 }
 
@@ -497,6 +497,12 @@ footer {
 }
 
 // Responsive
+
+@media only screen  and (min-width: @desktop-m) {
+  .step {
+    width: 60% !important;
+  }
+}
 
 @media only screen  and (max-width: @tablet) {
 
