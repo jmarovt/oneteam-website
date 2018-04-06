@@ -58,6 +58,9 @@ hr {
 .body-section.blue {
   border-color: #edeffe !important;
 }
+.body-section.blue + .body-section {
+  border-color: #edeffe !important;
+}
 .drift-open-chat {
   cursor: pointer;
 }
@@ -116,7 +119,8 @@ hr {
   padding: 4.2rem;
   text-align: center;
   color: white;
-  background-image: linear-gradient(to bottom right, #4A5CF9, #46237A);
+  background-color: #46237a;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%234a5cf9' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 #hero .nav {
   margin: 0 auto;
@@ -137,7 +141,7 @@ hr {
 }
 #hero .nav .menu li a {
   color: white;
-  opacity: 0.55;
+  opacity: 0.65;
   text-decoration: none;
 }
 #hero .nav .menu li a:hover {
@@ -341,7 +345,7 @@ hr {
   margin-top: 10%;
 }
 footer {
-  background-image: linear-gradient(to right, #4A5CF9, #46237A);
+  background-color: #46237A;
   text-align: center;
   font-size: 0.75rem;
   padding: 0.75rem 0;
@@ -426,6 +430,9 @@ footer a:hover {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
+  }
+  hr {
+    margin: 2.369rem auto;
   }
   #benefits .mini-benefits {
     display: block;

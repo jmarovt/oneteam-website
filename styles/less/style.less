@@ -98,6 +98,10 @@ hr {
 
   &.blue {
     border-color: lighten(@color-blue, 33%) !important;
+
+    &+ .body-section {
+      border-color: lighten(@color-blue, 33%) !important;
+    }
   }
 }
 
@@ -174,7 +178,8 @@ hr {
   padding: @font-size-xxxl;
   text-align: center;
   color: @color-white;
-  background-image: linear-gradient(to bottom right, @color-blue, @color-violet);
+  background-color: #46237a;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%234a5cf9' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 
   .nav {
     margin: 0 auto;
@@ -196,7 +201,7 @@ hr {
 
         a {
           color: @color-white;
-          opacity: 0.55;
+          opacity: 0.65;
           text-decoration: none;
 
           &:hover {
@@ -451,7 +456,7 @@ hr {
 }
 
 footer {
-  background-image: linear-gradient(to right, @color-blue, @color-violet);
+  background-color: @color-violet;
   text-align: center;
   font-size: @font-size-sm;
   padding: @font-size-sm 0;
@@ -557,6 +562,10 @@ footer {
       padding-right: 0;
       text-align: center;
     }
+  }
+
+  hr {
+    margin: @font-size-xl auto;
   }
 
   #benefits {

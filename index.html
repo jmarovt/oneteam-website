@@ -9,6 +9,7 @@
           href="./styles/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/animate.css">
     
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -106,8 +107,10 @@
           <div class="hero-left">
             <div class="hero-text">
               <h1>Tired of status meetings and missed deadlines? 😴</h1>
-              <h2>So are we. Oneteam helps everyone on your team focus on 3 weekly goals, while openly sharing the progress. All in Slack. 
-              </h2>
+              <!-- <h2>So are we. Oneteam helps everyone on your team focus on 3 weekly <strong>goals</strong>, while openly sharing progress & problems. All in Slack. 
+              </h2> -->
+              <h2>So are we. That's why Oneteam enables you to easily share <strong>Plans</strong>, <strong>Progress</strong> and <strong>Problems</strong> within your Slack team.
+              </h2> 
               <div class="cta">
                   <a class="signup-cta drift-open-chat"><img src="./images/Slack_Mark_Web.png">Add Oneteam to <strong>Slack</strong></a>
                 <p>Set it up in a <strong>minute</strong>. It's <strong>free</strong>.</p>
@@ -120,7 +123,7 @@
         </a>
     </section>
     <section id="how-it-works" class="body-section">
-      <h2>Align your team without distractions</h2>
+      <h2>How it Works</h2>
       <hr>
       <div class="three-steps">
 
@@ -141,18 +144,18 @@
               <div class="feature benefit">
                 <div class="text-section hidden-md">
                   <h4>Result: Better task prioritization</h4>
-                  <p>It gently pushes everyone to think hard about priorities and what they can realistically accomplish within a week.</p>
+                  <p>This constraint gently pushes everyone to think hard about priorities and what they can realistically accomplish within a week.</p>
                 </div>
               </div>
             </div>
-            <div class="step-visual">
-              <img src="./images/features/oneteam_testing_cropped.gif" class="feature-image set-goals">
+            <div class="step-visual wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1s">
+              <img src="./images/features/oneteam_testing_cropped.gif" class="feature-image set-goals wow">
             </div>
           </div>
           
           <div class="step" id="step-publish-goals">
-            <div class="step-visual hidden-md">
-                <img src="./images/features/feature-publish-goals.gif" class="feature-image publish-goals">
+            <div class="step-visual hidden-md wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1s">
+                <img src="./images/features/feature-publish-goals.gif" class="feature-image publish-goals wow">
             </div>
             <div class="step-text">
               <div class="feature">
@@ -162,19 +165,19 @@
                   </div>  
                 </div>
                 <div class="text-section">
-                  <h3>2. The goals are shared within the team</h3>
-                  <p>The weekly goals are transparently shared in a common Slack channel so everyone is on the same page.</p>
+                  <h3>2. Goals are shared within the Slack team</h3>
+                  <p>Weekly goals are then shared in a common Slack channel so everyone is on the same page.</p>
                 </div>
               </div>
               <img alt="arrow" class="chevron hidden-md" src="./images/arrow_down_dark.svg">
               <div class="feature benefit hidden-md">
                 <div class="text-section">
                   <h4>Result: Increased accountability</h4>
-                  <p>Broadcasting written goals within the team provenly improves accountability and increases a sense of urgency.</p>
+                  <p>Broadcasting goals within the team improves accountability and increases a sense of urgency.</p>
                 </div>
               </div>
             </div>
-            <div class="step-visual hidden-lg">
+            <div class="step-visual hidden-lg wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1s">
                 <img src="./images/features/feature-publish-goals.gif" class="feature-image publish-goals">
             </div>
           </div>
@@ -188,7 +191,7 @@
                     </div>  
                   </div>
                   <div class="text-section">
-                    <h3>3. Members report progress & problems</h3>
+                    <h3>3. Team members report progress & problems</h3>
                     <p>During the week everyone is asked to quickly report their progress & problems. These are shared with the team.</p>
                 </div>
               </div>
@@ -200,7 +203,7 @@
                 </div>
               </div>
             </div>
-            <div class="step-visual">
+            <div class="step-visual wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1s">
               <img src="./images/features/feature-publish-report.gif" class="feature-image report">
             </div>
           </div>
@@ -280,6 +283,7 @@
       </section>
     <section id="faq" class="body-section">
       <h2>Frequently asked questions</h2>
+      <hr>
       <div class="faq-item">
         <div class="icon-section">
           <div class="circle">
@@ -374,6 +378,13 @@
         }, false);
       }
       
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      var wow = new WOW({
+        offset: "200"
+      });
+      wow.init();
     </script>
   </body>
 </html>
