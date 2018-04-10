@@ -88,6 +88,7 @@
         });
       })();
     </script>
+    
   </head>
   <body>
     <section id="hero">
@@ -106,7 +107,7 @@
         <div class="hero-main">
           <div class="hero-left">
             <div class="hero-text">
-              <h1>Tired of status meetings and missed deadlines? &#x1F634;</h1>
+              <h1>Tired of status meetings and missed deadlines? <span class="emoji">&#x1F634;</span></h1>
               <!-- <h2>So are we. Oneteam helps everyone on your team focus on 3 weekly <strong>goals</strong>, while openly sharing progress & problems. All in Slack. 
               </h2> -->
               <h2>So are we. That's why Oneteam enables you to easily share weekly <strong>Plans</strong>, <strong>Progress</strong> and <strong>Problems</strong> within your Slack team.
@@ -337,6 +338,21 @@
     <footer>
         Made with ♥️ in Copenhagen by <a href="https://twitter.com/jmarovt" target="_blank">@jmarovt</a> & <a href="https://twitter.com/gbelcec" target="_blank">@gbelcec</a>
     </footer>
+    <script>
+      var ua = navigator.userAgent.toLowerCase();
+      var isWin7 = ua.indexOf('windows nt 6.1') > 0;
+
+      if (isWin7) {
+        var emojis = document.getElementsByClassName('emoji');
+        console.log(emojis.length);
+        for (var i = 0; i < emojis.length; ++i) {
+          var item = emojis[i];
+          
+          item.style.cssText = "display:none";
+        }
+      }
+      
+    </script>
     <script type="text/javascript">
       var targetOffset, currentPosition,
       body = document.body,
