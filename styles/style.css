@@ -32,6 +32,15 @@ h4 {
   margin-top: .2rem;
   line-height: 1.4;
 }
+h4.avatar {
+  margin: 0 0 0.75rem 0;
+}
+h4.avatar span {
+  font-weight: normal;
+  opacity: 0.4;
+  display: block;
+  line-height: 1;
+}
 h5 {
   font-size: 1rem;
   color: rgba(64, 63, 76, 0.6);
@@ -39,10 +48,10 @@ h5 {
   line-height: 1.4;
 }
 hr {
-  width: 6%;
+  width: 3.157rem;
   border: 0;
-  border-top: 2px solid rgba(64, 63, 76, 0.2);
-  margin: 2.369rem auto 4.2rem auto;
+  border-top: 3px solid rgba(64, 63, 76, 0.2);
+  margin: 1.77rem auto 4.2rem auto;
 }
 .body-section {
   padding: 4.2rem 0 5.6rem 0;
@@ -225,6 +234,12 @@ hr {
   height: 1.77rem;
   margin-right: 0.75rem;
 }
+.icon-section.avatar {
+  margin-right: 1.77rem;
+}
+.icon-section.avatar h4 {
+  margin-top: 1rem;
+}
 .icon-section.center {
   margin: 0 auto;
 }
@@ -244,33 +259,69 @@ hr {
   background-color: #1be566;
   opacity: 0.7;
 }
+.icon-section .avatar {
+  width: 2.369rem;
+  height: 2.369rem;
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-color: #4A5CF9;
+  border: 3px solid #4A5CF9;
+  background-position: center;
+}
+.icon-section .warren-buffet {
+  background-image: url('../images/testimonials/warren-buffet.png');
+}
+.icon-section .david-cancel {
+  background-image: url('../images/testimonials/david-cancel.png');
+}
+.icon-section .sam-altman {
+  background-image: url('../images/testimonials/sam-altman.png');
+}
+.icon-section .noah-kagan {
+  background-image: url('../images/testimonials/noah-kagan.png');
+}
+.icon-section .hiten-shah {
+  background-image: url('../images/testimonials/hiten-shah.png');
+}
+.icon-section .sheryl-sandberg {
+  background-image: url('../images/testimonials/sheryl-sandberg.png');
+}
+.icon-section .paul-adams {
+  background-image: url('../images/testimonials/paul-adams.png');
+}
 .text-section h3 .less-important {
   font-weight: 400;
 }
 .text-section p {
   line-height: 1.5;
 }
-#benefits {
+.benefits {
   background-color: #f7f8ff !important;
 }
-#benefits .mini-benefits {
+.benefits .mini-benefits {
   width: 85%;
   margin: 0 auto;
   margin-top: 1.77rem;
   display: flex;
   flex-wrap: wrap;
 }
-#benefits .mini-benefits .benefit {
+.benefits .mini-benefits .benefit {
   display: flex;
   width: calc(29.33333333%);
   margin-top: 1.77rem;
   text-align: left;
   padding: 0 2%;
 }
-#benefits .mini-benefits .benefit p {
+.benefits .mini-benefits .benefit p {
   margin-top: 2%;
   opacity: 0.9;
   line-height: 1.4;
+}
+.benefits .mini-benefits .benefit p.avatar a {
+  text-decoration: none;
+}
+.benefits .mini-benefits .benefit p.avatar a:hover {
+  text-decoration: underline;
 }
 #how-it-works .three-steps {
   text-align: left;
@@ -348,7 +399,7 @@ footer {
   background-color: #46237A;
   text-align: center;
   font-size: 0.75rem;
-  padding: 0.75rem 0;
+  padding: 1rem 0;
   color: rgba(255, 255, 255, 0.8);
 }
 footer a {
@@ -434,11 +485,11 @@ footer a:hover {
   hr {
     margin: 2.369rem auto;
   }
-  #benefits .mini-benefits {
+  .benefits .mini-benefits {
     display: block;
     width: 100%;
   }
-  #benefits .mini-benefits .benefit {
+  .benefits .mini-benefits .benefit {
     width: 100%;
     padding: 0;
   }

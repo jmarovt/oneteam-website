@@ -67,6 +67,17 @@ h4 {
   font-size: @font-size-base;
   margin-top: .2rem;
   line-height: 1.4;
+
+  &.avatar {
+    margin: 0 0 0.75rem 0;
+
+    span {
+      font-weight: normal;
+      opacity: 0.4;
+      display: block;
+      line-height: 1;
+    }
+  }
 }
 
 h5 {
@@ -77,10 +88,10 @@ h5 {
 }
 
 hr {
-  width: 6%;
+  width: @font-size-xxl;
   border: 0;
-  border-top: 2px solid fadeOut(@color-dark, 80%);
-  margin: @font-size-xl auto @font-size-xxxl auto;
+  border-top: 3px solid fadeOut(@color-dark, 80%);
+  margin: @font-size-lg auto @font-size-xxxl auto;
 }
 
 .body-section {
@@ -304,6 +315,14 @@ hr {
   height: @font-size-lg;
   margin-right: @font-size-sm;
 
+  &.avatar {
+    margin-right: @font-size-lg;
+
+    h4 {
+      margin-top: @font-size-base;
+    }
+  }
+
   &.center {
     margin: 0 auto;
   }
@@ -325,6 +344,46 @@ hr {
       opacity: 0.7;
     }
   }
+
+  .avatar {
+    width: @font-size-xl;
+    height: @font-size-xl;
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-color: @color-blue;
+    border: 3px solid @color-blue;
+    background-position: center;
+
+
+  }
+
+  .warren-buffet {
+    background-image: url('../images/testimonials/warren-buffet.png');
+  }
+
+  .david-cancel {
+    background-image: url('../images/testimonials/david-cancel.png');
+  }
+
+  .sam-altman {
+    background-image: url('../images/testimonials/sam-altman.png');
+  }
+
+  .noah-kagan {
+    background-image: url('../images/testimonials/noah-kagan.png');
+  }
+
+  .hiten-shah {
+    background-image: url('../images/testimonials/hiten-shah.png');
+  }
+
+  .sheryl-sandberg {
+    background-image: url('../images/testimonials/sheryl-sandberg.png');
+  }
+
+  .paul-adams {
+    background-image: url('../images/testimonials/paul-adams.png');
+  }
 }
 
 .text-section {
@@ -339,7 +398,7 @@ hr {
   }
 }
 
-#benefits {
+.benefits {
   background-color: lighten(@color-blue, 35%) !important;
 
   .mini-benefits {
@@ -360,6 +419,16 @@ hr {
         margin-top: @padding-thin;
         opacity: 0.9;
         line-height: 1.4;
+
+        &.avatar {
+          a {
+            text-decoration: none;
+
+            &:hover { 
+              text-decoration: underline;
+            }
+          }
+        }
       }
     }
   }
@@ -459,7 +528,7 @@ footer {
   background-color: @color-violet;
   text-align: center;
   font-size: @font-size-sm;
-  padding: @font-size-sm 0;
+  padding: @font-size-base 0;
   color: fadeout(@color-white, 20%);
 
   a {
@@ -568,7 +637,7 @@ footer {
     margin: @font-size-xl auto;
   }
 
-  #benefits {
+  .benefits {
     .mini-benefits {
       display: block;
       width: 100%;
