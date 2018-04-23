@@ -60,7 +60,10 @@ h1 {
 }
 
 h3 {
-  font-size: @font-size-md;
+  margin-top: 3px;
+  font-size: @font-size-base;
+  font-weight: @font-weight-normal;
+  opacity: 0.8;
 }
 
 h4 {
@@ -90,18 +93,14 @@ h5 {
 hr {
   width: @font-size-xxl;
   border: 0;
-  border-top: 2px solid @color-blue;
-  margin: @font-size-lg auto @font-size-xxxl auto;
+  border-top: 2px solid lighten(@color-blue, 20%);
+  margin: @font-size-lg auto @font-size-lg auto;
 }
 
 .body-section {
-  padding: @font-size-xxxl 0 @font-size-xxxxl 0;
+  padding: @font-size-xxxl 0 @font-size-xxxl 0;
   background-color: darken(@color-white, 0.6%);
   text-align: center;
-
-  h2 {
-    margin-bottom: @font-size-lg;
-  }
   
   &+ .body-section {
     border-top: 1px solid darken(@color-white, 10%);
@@ -155,6 +154,15 @@ hr {
   &.blue {
     background-color: @color-blue;
     color: @color-white;
+  }
+}
+
+.cta {
+  p {
+    margin-top: @font-size-xs;
+    font-size: @font-size-sm;
+    opacity: 0.8;
+    text-align: center;
   }
 }
 
@@ -255,13 +263,6 @@ hr {
 
       .cta {
         display: inline-block;
-      }
-
-      p {
-        margin-top: @font-size-xs;
-        font-size: @font-size-sm;
-        opacity: 0.8;
-        text-align: center;
       }
     }
 
@@ -540,6 +541,18 @@ hr {
       max-width: calc(33% - 1) !important;
     }
 
+  }
+}
+
+#bottom-cta {
+  margin: 0 auto;
+  text-align: center;
+  color: @color-white;
+  background-color: #46237a;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%234a5cf9' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+
+  .signup-cta {
+    margin-top: @font-size-lg;
   }
 }
 

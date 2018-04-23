@@ -25,7 +25,10 @@ h1 {
   font-weight: 600;
 }
 h3 {
-  font-size: 1.33rem;
+  margin-top: 3px;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.8;
 }
 h4 {
   font-size: 1rem;
@@ -50,16 +53,13 @@ h5 {
 hr {
   width: 3.157rem;
   border: 0;
-  border-top: 2px solid #4A5CF9;
-  margin: 1.77rem auto 4.2rem auto;
+  border-top: 2px solid #adb5fc;
+  margin: 1.77rem auto 1.77rem auto;
 }
 .body-section {
-  padding: 4.2rem 0 5.6rem 0;
+  padding: 4.2rem 0 4.2rem 0;
   background-color: #fdfdfd;
   text-align: center;
-}
-.body-section h2 {
-  margin-bottom: 1.77rem;
 }
 .body-section + .body-section {
   border-top: 1px solid #e6e6e6;
@@ -104,6 +104,12 @@ hr {
 .signup-cta.blue {
   background-color: #4A5CF9;
   color: white;
+}
+.cta p {
+  margin-top: 0.563rem;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  text-align: center;
 }
 .faq-item {
   width: 45%;
@@ -184,12 +190,6 @@ hr {
 }
 #hero .hero-main .hero-left .cta {
   display: inline-block;
-}
-#hero .hero-main .hero-left p {
-  margin-top: 0.563rem;
-  font-size: 0.75rem;
-  opacity: 0.8;
-  text-align: center;
 }
 #hero .hero-main .hero-right {
   flex-basis: 0;
@@ -405,6 +405,16 @@ hr {
 }
 #social-proof-2 .tweets .twitter-tweet {
   max-width: calc(32%) !important;
+}
+#bottom-cta {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  background-color: #46237a;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%234a5cf9' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+#bottom-cta .signup-cta {
+  margin-top: 1.77rem;
 }
 footer {
   background-color: #46237A;
