@@ -90,7 +90,7 @@ h5 {
 hr {
   width: @font-size-xxl;
   border: 0;
-  border-top: 3px solid fadeOut(@color-dark, 80%);
+  border-top: 2px solid @color-blue;
   margin: @font-size-lg auto @font-size-xxxl auto;
 }
 
@@ -98,6 +98,10 @@ hr {
   padding: @font-size-xxxl 0 @font-size-xxxxl 0;
   background-color: darken(@color-white, 0.6%);
   text-align: center;
+
+  h2 {
+    margin-bottom: @font-size-lg;
+  }
   
   &+ .body-section {
     border-top: 1px solid darken(@color-white, 10%);
@@ -109,6 +113,7 @@ hr {
 
   &.blue {
     border-color: lighten(@color-blue, 33%) !important;
+    background-color: lighten(@color-blue, 35%) !important;
 
     &+ .body-section {
       border-color: lighten(@color-blue, 33%) !important;
@@ -399,7 +404,6 @@ hr {
 }
 
 .benefits {
-  background-color: lighten(@color-blue, 35%) !important;
 
   .mini-benefits {
     width: 85%;
@@ -521,6 +525,21 @@ hr {
 
   .step + .step {
     margin-top: 10%;
+  }
+}
+
+#social-proof-2 {
+  .tweets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+
+    .twitter-tweet {
+      max-width: calc(33% - 1) !important;
+    }
+
   }
 }
 
@@ -678,6 +697,14 @@ footer {
         margin: @font-size-lg auto !important;
       }
     } 
+  }
+
+  #social-proof-2 {
+    .tweets {
+      .twitter-tweet {
+        max-width: 100% !important;
+      }
+    }
   }
   
   .faq-item {

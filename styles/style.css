@@ -50,13 +50,16 @@ h5 {
 hr {
   width: 3.157rem;
   border: 0;
-  border-top: 3px solid rgba(64, 63, 76, 0.2);
+  border-top: 2px solid #4A5CF9;
   margin: 1.77rem auto 4.2rem auto;
 }
 .body-section {
   padding: 4.2rem 0 5.6rem 0;
   background-color: #fdfdfd;
   text-align: center;
+}
+.body-section h2 {
+  margin-bottom: 1.77rem;
 }
 .body-section + .body-section {
   border-top: 1px solid #e6e6e6;
@@ -66,6 +69,7 @@ hr {
 }
 .body-section.blue {
   border-color: #edeffe !important;
+  background-color: #f7f8ff !important;
 }
 .body-section.blue + .body-section {
   border-color: #edeffe !important;
@@ -295,9 +299,6 @@ hr {
 .text-section p {
   line-height: 1.5;
 }
-.benefits {
-  background-color: #f7f8ff !important;
-}
 .benefits .mini-benefits {
   width: 85%;
   margin: 0 auto;
@@ -394,6 +395,16 @@ hr {
 }
 #how-it-works .step + .step {
   margin-top: 10%;
+}
+#social-proof-2 .tweets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+}
+#social-proof-2 .tweets .twitter-tweet {
+  max-width: calc(32%) !important;
 }
 footer {
   background-color: #46237A;
@@ -511,6 +522,9 @@ footer a:hover {
   }
   #how-it-works .three-steps .chevron {
     margin: 1.77rem auto !important;
+  }
+  #social-proof-2 .tweets .twitter-tweet {
+    max-width: 100% !important;
   }
   .faq-item {
     width: 100%;
