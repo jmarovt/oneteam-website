@@ -536,6 +536,9 @@ footer a:hover {
   #how-it-works .three-steps .chevron {
     margin: 1.77rem auto !important;
   }
+  #social-proof-2 .tweets {
+    width: 100%;
+  }
   #social-proof-2 .tweets .twitter-tweet {
     max-width: 100% !important;
   }
