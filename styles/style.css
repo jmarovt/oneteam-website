@@ -24,12 +24,6 @@ h1 {
   font-size: 2.369rem;
   font-weight: 600;
 }
-h3 {
-  margin-top: 3px;
-  font-size: 1rem;
-  font-weight: 400;
-  opacity: 0.8;
-}
 h4 {
   font-size: 1rem;
   margin-top: .2rem;
@@ -293,6 +287,9 @@ hr {
 .icon-section .paul-adams {
   background-image: url('../images/testimonials/paul-adams.png');
 }
+.text-section h3 {
+  margin-top: 3px;
+}
 .text-section h3 .less-important {
   font-weight: 400;
 }
@@ -415,6 +412,12 @@ hr {
 }
 #bottom-cta .signup-cta {
   margin-top: 1.77rem;
+}
+#bottom-cta h3 {
+  margin-top: 3px;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.8;
 }
 footer {
   background-color: #46237A;
