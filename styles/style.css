@@ -404,7 +404,7 @@ hr {
   max-width: calc(32%) !important;
 }
 #bottom-cta {
-  padding: 5.6rem 0;
+  padding: 5.6rem inherit;
   margin: 0 auto;
   text-align: center;
   color: white;
