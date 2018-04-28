@@ -47,7 +47,7 @@ h5 {
 hr {
   width: 3.157rem;
   border: 0;
-  border-top: 2px solid #adb5fc;
+  border-top: 2px solid #8cb1fc;
   margin: 1.77rem auto 1.77rem auto;
 }
 .body-section {
@@ -62,11 +62,11 @@ hr {
   background-color: white;
 }
 .body-section.blue {
-  border-color: #edeffe !important;
-  background-color: #f7f8ff !important;
+  border-color: #eaf1ff !important;
+  background-color: #f4f8ff !important;
 }
 .body-section.blue + .body-section {
-  border-color: #edeffe !important;
+  border-color: #eaf1ff !important;
 }
 .drift-open-chat {
   cursor: pointer;
@@ -96,7 +96,7 @@ hr {
   vertical-align: top;
 }
 .signup-cta.blue {
-  background-color: #4A5CF9;
+  background-color: #286efa;
   color: white;
 }
 .cta p {
@@ -132,7 +132,7 @@ hr {
   padding: 4.2rem;
   text-align: center;
   color: white;
-  background-color: #46237a;
+  background-color: #290F4F;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%234a5cf9' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 #hero .nav {
@@ -248,7 +248,7 @@ hr {
   width: 1.77rem;
   height: 1.77rem;
   font-size: 0.75rem;
-  background-color: #4A5CF9;
+  background-color: #286efa;
   color: white;
   border-radius: 50%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -262,8 +262,8 @@ hr {
   height: 2.369rem;
   background-size: 1.5rem;
   background-repeat: no-repeat;
-  background-color: #4A5CF9;
-  border: 3px solid #4A5CF9;
+  background-color: #286efa;
+  border: 3px solid #286efa;
   background-position: center;
 }
 .icon-section .warren-buffet {
@@ -408,7 +408,7 @@ hr {
   margin: 0 auto;
   text-align: center;
   color: white;
-  background-color: #46237a;
+  background-color: #290F4F;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%234a5cf9' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 #bottom-cta .signup-cta {
@@ -421,7 +421,7 @@ hr {
   opacity: 0.8;
 }
 footer {
-  background-color: #46237A;
+  background-color: #290F4F;
   text-align: center;
   font-size: 0.75rem;
   padding: 1rem 0;
