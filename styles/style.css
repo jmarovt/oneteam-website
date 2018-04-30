@@ -62,11 +62,11 @@ hr {
   background-color: white;
 }
 .body-section.blue {
-  border-color: #ffffff !important;
-  background-color: #ffffff !important;
+  border-color: #efeffb !important;
+  background-color: #f7f7fd !important;
 }
 .body-section.blue + .body-section {
-  border-color: #ffffff !important;
+  border-color: #efeffb !important;
 }
 .drift-open-chat {
   cursor: pointer;
