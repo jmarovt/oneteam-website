@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oneteam</title>
+    <meta name="description"
+          content="">
+    <link rel="stylesheet"
+          href="../styles/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/animate.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    
+    <!-- Start of Async Drift Code -->
+    <script>
+      !function() {
+        var t;
+        if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+        t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n;
+            return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e, n, o, i;
+          e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+          n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+        });
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('ta6xpdzcevuv');
+    </script>
+    <!-- End of Async Drift Code -->
+    <script>
+      (function() {
+        /* Add this class to any elements you want to use to open Drift.
+          *
+          * Examples:
+          * - <a class="drift-open-chat">Questions? We're here to help!</a>
+          * - <button class="drift-open-chat">Chat now!</button>
+          *
+          * You can have any additional classes on those elements that you
+          * would ilke.
+          */
+        var DRIFT_CHAT_SELECTOR = '.drift-open-chat'
+        /* http://youmightnotneedjquery.com/#ready */
+        function ready(fn) {
+          if (document.readyState != 'loading') {
+            fn();
+          } else if (document.addEventListener) {
+            document.addEventListener('DOMContentLoaded', fn);
+          } else {
+            document.attachEvent('onreadystatechange', function() {
+              if (document.readyState != 'loading')
+                fn();
+            });
+          }
+        }
+        /* http://youmightnotneedjquery.com/#each */
+        function forEachElement(selector, fn) {
+          var elements = document.querySelectorAll(selector);
+          for (var i = 0; i < elements.length; i++)
+            fn(elements[i], i);
+        }
+        function openSidebar(driftApi, event) {
+          event.preventDefault();
+          driftApi.sidebar.open();
+          return false;
+        }
+        ready(function() {
+          drift.on('ready', function(api) {
+            var handleClick = openSidebar.bind(this, api)
+            forEachElement(DRIFT_CHAT_SELECTOR, function(el) {
+              el.addEventListener('click', handleClick);
+            });
+          });
+        });
+      })();
+    </script>
+    
+  </head>
+  <body>
+    <section id="hero">
+        <header>
+          <div class="nav">
+            <img src="../images/oneteam_logo_3.svg"
+                class="logo">
+            <ul class="menu">
+              <li><a class="smooth-scroll" href="#how-it-works">How it Works</a></li>
+              <li><a class="smooth-scroll" href="#reasons-to-love">Benefits</a></li>
+              <li><a class="smooth-scroll" href="#faq">FAQ</a></li>
+              <li><a class="drift-open-chat">Add to Slack →</a></li>
+            </ul>
+          </div>
+        </header>
+        <div class="hero-main">
+          <div class="hero-left">
+            <div class="hero-text">
+              <h1>Great teams set clear goals <span class="emoji">👌</span></h1>
+                <!-- <h1>Share goals & progress with your Slack team <span class="emoji">👌</span></h1> -->
+              <!-- <h1>Tired of status meetings and random tasks? <span class="emoji">&#x1F634;</span></h1> -->
+              <!-- <h2>So are we. Oneteam helps everyone on your team focus on 3 weekly <strong>goals</strong>, while openly sharing progress & problems. All in Slack. 
+              </h2> -->
+              <!-- <h2>So are we. That's why Oneteam helps you share weekly Goals, Progress and Problems within your Slack team.</h2> -->
+              <!-- <h2>Oneteam makes it easy and fast for your team to share weekly <strong>Goals</strong>, <strong>Progress</strong> and <strong>Problems</strong>. -->
+                <h2>Oneteam makes it simple for your team members to set weekly <strong>Goals</strong>, report <strong>Progress</strong> & discuss <strong>Problems</strong>. All in Slack.</h2>
+              <div class="cta">
+                  <a class="signup-cta" href="https://slack.com/oauth/authorize?scope=bot%20channels:write%20channels:read%20commands&client_id=355179353252.355184082660&redirect_uri=https://oneteam-app.herokuapp.com/oauth/auth-code" target="_blank"><img src="../images/Slack_Mark_Web.png">Add Oneteam to <strong>Slack</strong></a>
+                <p>Set it up in a <strong>minute</strong>. It's <strong>free</strong>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#why-goals" class="scroll-down smooth-scroll">
+          <img alt="arrow" data-hash="#why-goals" class="chevron scroll-down smooth-scroll" src="https://d12ur07klrawbl.cloudfront.net/assets/img/openvid/arrow-white-266d4fcfa171b6535e20dfdb5ff112de.svg">
+        </a>
+    </section>
+    <section id="why-goals" class="benefits body-section blue">
+      <h2>World's top performers win with goals</h2>
+      <hr>
+      <div class="mini-benefits">
+      <div class="benefit">
+          <div class="icon-section avatar">
+            <div class="circle avatar sheryl-sandberg">
+              
+            </div>  
+          </div>
+          <div>
+            <h4 class="avatar">Sheryl Sandberg<span>Facebook</span></h4>
+            <p class="avatar">She pushes her teams to strive for ruthless prioritization. <a href="https://www.youtube.com/watch?v=r2japGzKATg" target="_blank">See video →</a></p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="icon-section avatar">
+            <div class="circle avatar warren-buffet">
+              
+            </div>  
+          </div>
+          <div>
+            <h4 class="avatar">Warren Buffet<span>Berkshire Hathaway</span></h4>
+            <p class="avatar">The famous investor is known for his simple 5-20 goals rule. <a href="https://www.youtube.com/watch?v=yS4rYDUVJ_Y&feature=youtu.be&t=38s" target="_blank">See video →</a></p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="icon-section avatar">
+            <div class="circle avatar sam-altman">
+              
+            </div>  
+          </div>
+          <div>
+            <h4 class="avatar">Sam Altman<span>Y-Combinator</span></h4>
+            <p class="avatar">He is obsessed with strict lists of prioritized goals. <a href="http://blog.samaltman.com/productivity" target="_blank">Read more →</a></p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="icon-section avatar">
+            <div class="circle avatar david-cancel">
+              
+            </div>  
+          </div>
+          <div>
+            <h4 class="avatar">David Cancel<span>Drift</span></h4>
+            <p class="avatar">He rallies his teams at Drift around a few clear goals. <a href="https://www.youtube.com/watch?v=40BqDfXM6zE&feature=youtu.be&t=7m11s" target="_blank">See video →</a></p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="icon-section avatar">
+            <div class="circle avatar noah-kagan">
+              
+            </div>  
+          </div>
+          <div>
+            <h4 class="avatar">Noah Kagan<span>Sumo</span></h4>
+            <p class="avatar">His biggest growth hack is to always focus on one goal. <a href="https://youtu.be/3P1glyHRecQ?t=3m46s" target="_blank">See video →</a></p>
+          </div>
+        </div>
+        <div class="benefit">
+            <div class="icon-section avatar">
+              <div class="circle avatar hiten-shah">
+                
+              </div>  
+            </div>
+            <div>
+              <h4 class="avatar">Hiten Shah<span>Product Habits</span></h4>
+              <p class="avatar">His advice is to align all teams around the biggest problem. <a href="https://www.youtube.com/watch?v=jeqYc8a822I&feature=youtu.be&t=4m41s" target="_blank">See video →</a></p>
+            </div>
+          </div>
+      </div>
+      
+    </section>
+    <section id="how-it-works" class="body-section">
+      <h2>Here's how Oneteam works
+      </h2>
+      
+      <hr>
+      <div class="three-steps">
+
+          <div class="step" id="step-set-goals">
+            <div class="step-text">
+              <div class="feature">
+                <div class="icon-section">
+                  <div class="circle">
+                    <i class="fas fa-bell"></i>
+                  </div>  
+                </div>
+                <div class="text-section">
+                  <h3>1. Team members define their weekly goals</h3>
+                  <p>Each Monday morning Oneteam asks your team members to list up to 3 main goals for the week.</p>
+                </div>
+              </div>
+              <img alt="arrow" class="chevron hidden-md" src="../images/arrow_down_dark.svg">
+              <div class="feature benefit">
+                <div class="text-section hidden-md">
+                  <h4>Result: Better task prioritization</h4>
+                  <p>This constraint gently pushes everyone to think hard about priorities and what they can realistically accomplish within a week.</p>
+                </div>
+              </div>
+            </div>
+            <div class="step-visual wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+              <img src="../images/features/oneteam_testing_cropped.gif" class="feature-image set-goals wow">
+            </div>
+          </div>
+          
+          <div class="step" id="step-publish-goals">
+            <div class="step-visual hidden-md wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                <img src="../images/features/feature-publish-goals.gif" class="feature-image publish-goals wow">
+            </div>
+            <div class="step-text">
+              <div class="feature">
+                <div class="icon-section">
+                  <div class="circle">
+                    <i class="fas fa-users"></i>
+                  </div>  
+                </div>
+                <div class="text-section">
+                  <h3>2. Goals are shared within the Slack team</h3>
+                  <p>Weekly goals are shared in a common Slack channel so everyone is on the same page.</p>
+                </div>
+              </div>
+              <img alt="arrow" class="chevron hidden-md" src="./images/arrow_down_dark.svg">
+              <div class="feature benefit hidden-md">
+                <div class="text-section">
+                  <h4>Result: Increased accountability</h4>
+                  <p>Broadcasting goals within the team improves accountability and increases a sense of urgency.</p>
+                </div>
+              </div>
+            </div>
+            <div class="step-visual hidden-lg wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                <img src="../images/features/feature-publish-goals.gif" class="feature-image publish-goals">
+            </div>
+          </div>
+
+          <div class="step" id="step-report">
+            <div class="step-text">
+              <div class="feature">
+                <div class="icon-section">
+                    <div class="circle">
+                      <i class="fas fa-flag-checkered"></i>
+                    </div>  
+                  </div>
+                  <div class="text-section">
+                    <h3>3. Team members report progress & problems</h3>
+                    <p>During the week everyone is asked to quickly report their progress & problems. These are shared with the team.</p>
+                </div>
+              </div>
+              <img alt="arrow" class="chevron hidden-md" src="../images/arrow_down_dark.svg">
+              <div class="feature benefit hidden-md">
+                <div class="text-section">
+                  <h4>Result: Collaborative problem solving</h4>
+                  <p>Because achievements and problems are reported and discussed openly, they get tackled early and fast.</p>
+                </div>
+              </div>
+            </div>
+            <div class="step-visual wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+              <img src="../images/features/feature-publish-report.gif" class="feature-image report">
+            </div>
+          </div>
+
+        </div>
+    </section>
+    <section id="social-proof-2" class="body-section blue">
+      <h2>What others say about weekly goals? 👇</h2>
+      <hr>
+      <div class="tweets">
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Don&#39;t complain about how hard you are working.  That never works.<br><br>Maybe just send a weekly update sharing everything you got done this week and are working on.<br><br>Now, that works like a charm.</p>&mdash; Jason M. Lemkin 🦄 (@jasonlk) <a href="https://twitter.com/jasonlk/status/988078190282264577?ref_src=twsrc%5Etfw">April 22, 2018</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">I send a weekly Engineering Highlights email to provide key updates to the team and executives. <br><br>Purpose is to share context internally as well as to other departments.<br><br>Sent the first one after 4 days at the company.</p>&mdash; Ron Pragides (@mrp) <a href="https://twitter.com/mrp/status/988103619999404034?ref_src=twsrc%5Etfw">April 22, 2018</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">I’ve recently adopted a habit of setting 3–5 weekly goals. <a href="https://twitter.com/Padday?ref_src=twsrc%5Etfw">@Padday</a> does a good job of articulating why this is effective. <a href="https://t.co/pSunYkeT1a">https://t.co/pSunYkeT1a</a> h/t <a href="https://twitter.com/kaz?ref_src=twsrc%5Etfw">@kaz</a> <a href="https://t.co/1BaSQ6kik9">pic.twitter.com/1BaSQ6kik9</a></p>&mdash; Ryan Hoover (@rrhoover) <a href="https://twitter.com/rrhoover/status/940052506461093888?ref_src=twsrc%5Etfw">December 11, 2017</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">Goal achievement highest if you &quot;send goals and weekly progress reports to a friend&quot; <a href="https://t.co/6mQgKSn5lM">https://t.co/6mQgKSn5lM</a> <a href="https://t.co/42IBNtiZ2L">pic.twitter.com/42IBNtiZ2L</a></p>&mdash; Pieter Levels 🏝 (@levelsio) <a href="https://twitter.com/levelsio/status/758759944644591617?ref_src=twsrc%5Etfw">July 28, 2016</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;Be goal driven, not plan driven, with your marketing.&quot; -- <a href="https://twitter.com/pc4media?ref_src=twsrc%5Etfw">@pc4media</a> <br><br>(Yes! Need to be agile and change weekly based on results.)<a href="https://twitter.com/hashtag/IMlive17?src=hash&amp;ref_src=twsrc%5Etfw">#IMlive17</a></p>&mdash; Mike Volpe (@mvolpe) <a href="https://twitter.com/mvolpe/status/892410092221550592?ref_src=twsrc%5Etfw">August 1, 2017</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        
+        <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Have a weekly metric goal and put it in front of your face everyday</p>&mdash; Michael Seibel (@mwseibel) <a href="https://twitter.com/mwseibel/status/912357668966289409?ref_src=twsrc%5Etfw">September 25, 2017</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">4. compare your goals with progress, weekly. nobody can tell you if you&#39;re on wrong track. you are the expert.</p>&mdash; ryan kulp 🇺🇸 (@ryanckulp) <a href="https://twitter.com/ryanckulp/status/858391485313634304?ref_src=twsrc%5Etfw">April 29, 2017</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It&#39;s amazing what happens when you simply 1) write down a goal and 2) look at it weekly. If you don&#39;t, it will change your life.</p>&mdash; Mitchell Harper (@mitchellharper) <a href="https://twitter.com/mitchellharper/status/739210369336377345?ref_src=twsrc%5Etfw">June 4, 2016</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">If you don&#39;t set goals, you&#39;re just doing work.</p>&mdash; Peter Caputa IV (@pc4media) <a href="https://twitter.com/pc4media/status/958066680835592192?ref_src=twsrc%5Etfw">January 29, 2018</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </section>
+    <section id="bottom-cta" class="body-section">
+      <h2>Steal the secret of the top performers</h2>
+      <h3>Help your team focus with simple weekly goals.</h3>
+      <div class="cta">
+        <a class="signup-cta" href="https://slack.com/oauth/authorize?scope=bot%20channels:write%20channels:read%20commands&client_id=355179353252.355184082660&redirect_uri=https://oneteam-app.herokuapp.com/oauth/auth-code" target="_blank"><img src="../images/Slack_Mark_Web.png">Add Oneteam to <strong>Slack</strong></a>
+      <p>Set it up in a <strong>minute</strong>. It's <strong>free</strong>.</p>
+    </div>
+    </section>
+    <section id="reasons-to-love" class="benefits body-section blue">
+      <h2>More reasons to love Oneteam</h2>
+      <hr>
+      <div class="mini-benefits">
+        <div class="benefit">
+          <div class="icon-section">
+            <div class="circle">
+              <i class="fas fa-users"></i>
+            </div>  
+          </div>
+          <div>
+            <h4>Great for remote teams</h4>
+            <p>Set goals in async manner and stay on the same page.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="icon-section">
+            <div class="circle">
+              <i class="fas fa-comments"></i>
+            </div>  
+          </div>
+          <div>
+            <h4>No more status meetings</h4>
+            <p>Hold meetings to solve problems instead of reporting status.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="icon-section">
+            <div class="circle">
+              <i class="fas fa-handshake"></i>
+            </div>  
+          </div>
+          <div>
+            <h4>Full transparency</h4>
+            <p>Quickly see what everyone is working on and how it's going.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="icon-section">
+            <div class="circle">
+              <i class="fab fa-slack-hash"></i>
+            </div>  
+          </div>
+          <div>
+            <h4>Slack based</h4>
+            <p>Everything is in Slack: goals, progress, problems, notifications.</p>
+          </div>
+        </div>
+        <div class="benefit">
+            <div class="icon-section">
+              <div class="circle">
+                <i class="fas fa-fire"></i>
+              </div>  
+            </div>
+            <div>
+              <h4>Reduces bottlenecks</h4>
+              <p>Problems and bottlenecks get surfaced & solved quickly.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="icon-section">
+              <div class="circle">
+                <i class="fas fa-hourglass-start"></i>
+              </div>  
+            </div>
+            <div>
+              <h4>Super quick</h4>
+              <p>Setting goals and reporting only takes a minute because of Slack.</p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section id="faq" class="body-section">
+      <h2>Frequently asked questions</h2>
+      <hr>
+      <div class="faq-item">
+        <div class="icon-section">
+          <div class="circle">
+            <i class="fas fa-question"></i>
+          </div>
+        </div>
+        <div class="text-section">
+          <h4>Is Oneteam based on the PPP (Progress, Plans, Problems) framework?</h4>
+          <p>Yes, it is. The <a href="https://en.wikipedia.org/wiki/Progress,_plans,_problems" target="_blank">PPP framework</a> has been popularized by some of the world's best companies (Facebook, Skype).</p> 
+          <p>With Oneteam we took some of the ingredients that made PPP great, built it natively in Slack and tweaked a few things to make it even more effective.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="icon-section">
+          <div class="circle">
+            <i class="fas fa-question"></i>
+          </div>
+        </div>
+        <div class="text-section">
+          <h4>I do mainly recurring tasks. How can that fit into Oneteam?</h4>
+          <p>Ongoing tasks can fit into Oneteam if you rephrase them into actionable goals.</p><p>For example: let’s say you’re a recruiter. While you obviously do a lot of screening and interviews, that’s not a very useful and measurable goal. Instead, you could set yourself goals like <i>"Send 3 job offers"</i> or <i>"Get 2 candidates to the last stage of our interviewing process"</i>.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="icon-section">
+          <div class="circle">
+            <i class="fas fa-question"></i>
+          </div>
+        </div>
+        <div class="text-section">
+          <h4>Do you have some tips for defining goals?</h4>
+          <p>A question we found helpful when setting goals is: <i>“Coming this Friday - what would I be proud to have done this week?”</i></p>
+          <p>That’s why we encourage simple, achievable and measurable goals.</p>
+          <p><strong>Simple</strong>: goals that everyone on your team can understand. By making your goals understandable, you make sure that people can follow the progress and help you solve potential problems.</p>
+          <p><strong>Achievable</strong>: goals that you are realistically capable of accomplishing in a week. We are all prone to set over-ambitious goals. But when you consistently overpromise and underdeliver, the team loses faith in your estimation capabilities.</p>
+          <p><strong>Measurable</strong>: focus on making each goal as measurable as possible. For example: in case you need to deliver some kind of document, you could phrase the goal as <i>“Finish the document and send it to Laura”</i>. This would be much more measurable than plain <i>“Work on the document”</i>.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="icon-section">
+          <div class="circle">
+            <i class="fas fa-question"></i>
+          </div>
+        </div>
+        <div class="text-section">
+          <h4>Can we use Oneteam if we don’t use Slack?</h4>
+          <p>Unfortunately not. We are currently fully commited to build Oneteam only on the Slack platform.</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+        Made with ♥️ in Copenhagen by <a href="https://twitter.com/jmarovt" target="_blank">@jmarovt</a> & <a href="https://twitter.com/gbelcec" target="_blank">@gbelcec</a>
+    </footer>
+    <script>
+      var ua = navigator.userAgent.toLowerCase();
+      var isWin7 = ua.indexOf('windows nt 6.1') > 0;
+
+      if (isWin7) {
+        var emojis = document.getElementsByClassName('emoji');
+        console.log(emojis.length);
+        for (var i = 0; i < emojis.length; ++i) {
+          var item = emojis[i];
+          
+          item.style.cssText = "display:none";
+        }
+      }
+      
+    </script>
+    <script type="text/javascript">
+      var targetOffset, currentPosition,
+      body = document.body,
+      buttons = document.getElementsByClassName('smooth-scroll'),
+      animateTime = 900;
+      
+      function getPageScroll() {
+        var yScroll;
+
+        if (window.pageYOffset) {
+          yScroll = window.pageYOffset;
+        } else if (document.documentElement && document.documentElement.scrollTop) {
+          yScroll = document.documentElement.scrollTop;
+        } else if (document.body) {
+          yScroll = document.body.scrollTop;
+        }
+        return yScroll;
+      }
+      
+      for(var i = 0; i < buttons.length; i++){
+        buttons[i].addEventListener('click', function (event) {
+
+        if (event.target.hash){
+          targetOffset = document.getElementById(event.target.hash.substr(1)).offsetTop;
+        }
+        else if (event.target.dataset.hash) {
+          targetOffset = document.getElementById(event.target.dataset.hash.substr(1)).offsetTop;
+        }
+        
+        currentPosition = getPageScroll();
+
+        body.classList.add('in-transition');
+        body.style.WebkitTransform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+        body.style.MozTransform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+        body.style.transform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+
+        window.setTimeout(function () {
+          body.classList.remove('in-transition');
+          body.style.cssText = "";
+          window.scrollTo(0, targetOffset);
+        }, animateTime);
+
+        event.preventDefault();
+
+        }, false);
+      }
+      
+    </script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+      var wow = new WOW({
+        offset: "250"
+      });
+      wow.init();
+    </script>
+    
+  </body>
+</html>
