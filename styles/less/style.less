@@ -2,7 +2,8 @@
 @color-blue: #6665DD;
 @color-white: white;
 @color-dark: #403f4c;
-@color-violet: #3E21BC;
+@color-violet-old: #3E21BC;
+@color-violet: #301887;
 @color-green: #32E875;
 
 // Main dimensions
@@ -192,11 +193,16 @@ hr {
 // Sections
 
 #hero {
-  padding: @font-size-xxxl;
   text-align: center;
   color: @color-white;
   background-color: @color-violet;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23fafafa' fill-opacity='0.16' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  background-image: url("../images/cover-image-nature.jpg");
+  background-size: cover;
+
+  .hero-cover {
+    background-color: fadeout(@color-violet, 15%);
+    padding: @font-size-xxxl;
+  }
 
   .nav {
     margin: 0 auto;
@@ -266,11 +272,11 @@ hr {
 
     h2 {
       font-size: @font-size-base;
-      line-height: 1.5;
+      line-height: 1.4;
       font-weight: @font-weight-normal;
       width: 80%;
       opacity: 0.85;
-      margin: @font-size-xs auto 0 auto;
+      margin: 5px auto 0 auto;
 
       a {
         color: @color-white;
@@ -628,7 +634,12 @@ footer {
   }
 
   #hero {
-    padding: @padding-main-mobile;
+
+    background-position-x: 50%;
+
+    .hero-cover {
+      padding: @padding-main-mobile;
+    }
 
     .menu {
       display: none;

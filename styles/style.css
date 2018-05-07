@@ -129,11 +129,15 @@ hr {
   margin-top: -0.8rem;
 }
 #hero {
-  padding: 4.2rem;
   text-align: center;
   color: white;
-  background-color: #3E21BC;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23fafafa' fill-opacity='0.16' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  background-color: #301887;
+  background-image: url("../images/cover-image-nature.jpg");
+  background-size: cover;
+}
+#hero .hero-cover {
+  background-color: rgba(48, 24, 135, 0.85);
+  padding: 4.2rem;
 }
 #hero .nav {
   margin: 0 auto;
@@ -191,11 +195,11 @@ hr {
 }
 #hero .hero-main h2 {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.4;
   font-weight: 400;
   width: 80%;
   opacity: 0.85;
-  margin: 0.563rem auto 0 auto;
+  margin: 5px auto 0 auto;
 }
 #hero .hero-main h2 a {
   color: white;
@@ -408,7 +412,7 @@ hr {
   margin: 0 auto;
   text-align: center;
   color: white;
-  background-color: #3E21BC;
+  background-color: #301887;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%234a5cf9' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 #bottom-cta .signup-cta {
@@ -421,7 +425,7 @@ hr {
   opacity: 0.8;
 }
 footer {
-  background-color: #3E21BC;
+  background-color: #301887;
   text-align: center;
   font-size: 0.75rem;
   padding: 1rem 0;
@@ -478,6 +482,9 @@ footer a:hover {
     padding: 8%;
   }
   #hero {
+    background-position-x: 50%;
+  }
+  #hero .hero-cover {
     padding: 8%;
   }
   #hero .menu {
