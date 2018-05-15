@@ -132,7 +132,7 @@ hr {
   text-align: center;
   color: white;
   background-color: #301887;
-  background-image: url("../images/cover-image-nature.jpg");
+  background-image: url("../images/cover-image-nature-blur.jpg");
   background-size: cover;
 }
 #hero .hero-cover {
@@ -175,7 +175,7 @@ hr {
   margin-top: 4%;
 }
 #hero .hero-main {
-  margin: 5.6rem 0 4.2rem 0;
+  margin: calc(6.72rem) 0 4.2rem 0;
 }
 #hero .hero-main .hero-left {
   margin: 0 auto;
@@ -198,7 +198,7 @@ hr {
   line-height: 1.4;
   font-weight: 400;
   width: 80%;
-  opacity: 0.85;
+  opacity: 0.8;
   margin: 5px auto 0 auto;
 }
 #hero .hero-main h2 a {
