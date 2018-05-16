@@ -170,6 +170,7 @@ hr {
 }
 #hero.thin {
   padding: 2% 4% 4% 4%;
+  background-image: none;
 }
 #hero .status-feedback {
   margin-top: 4%;
