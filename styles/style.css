@@ -179,7 +179,7 @@ hr {
   margin-top: 4%;
 }
 #hero .hero-main {
-  margin: calc(7.84rem) 0 4.2rem 0;
+  margin: 20vh 0 4.2rem 0;
 }
 #hero .hero-main .hero-left {
   margin: 0 auto;
@@ -233,7 +233,7 @@ hr {
 }
 #hero .scroll-down {
   position: absolute;
-  bottom: 60px;
+  bottom: 8vh;
 }
 .icon-section {
   width: 1.77rem;
