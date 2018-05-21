@@ -199,10 +199,12 @@ hr {
   background-color: @color-violet;
   background-image: url("../images/cover-image-nature.jpg");
   background-size: cover;
+  height: 90vh;
 
   .hero-cover {
     background-color: fadeout(@color-violet, 15%);
     padding: @font-size-xxxl;
+    height: 100%;
   }
 
   .nav {
@@ -312,8 +314,8 @@ hr {
   }
 
   .scroll-down {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    position: absolute;
+    bottom: 60px;
   }
 }
 

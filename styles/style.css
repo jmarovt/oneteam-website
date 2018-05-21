@@ -135,10 +135,12 @@ hr {
   background-color: #301887;
   background-image: url("../images/cover-image-nature.jpg");
   background-size: cover;
+  height: 90vh;
 }
 #hero .hero-cover {
   background-color: rgba(48, 24, 135, 0.85);
   padding: 4.2rem;
+  height: 100%;
 }
 #hero .nav {
   margin: 0 auto;
@@ -230,8 +232,8 @@ hr {
   -webkit-animation-fill-mode: forwards;
 }
 #hero .scroll-down {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+  position: absolute;
+  bottom: 60px;
 }
 .icon-section {
   width: 1.77rem;
