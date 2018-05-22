@@ -297,7 +297,7 @@ hr {
   .chevron {
     display: block;
     width: 26px;
-    margin: 0 auto;
+    margin-left: -13px;
     -webkit-animation-name: bob, bob;
     animation-name: bob, bob;
     -webkit-animation-duration: .375s, 1.425s;
@@ -639,7 +639,7 @@ footer {
   }
 
   #hero {
-
+    height: 100vh;
     background-position-x: 50%;
 
     .hero-cover {
@@ -652,6 +652,10 @@ footer {
 
     .chevron {
       margin-top: @font-size-xl;
+
+      &.scroll-down {
+        bottom: 5vh;
+      }
     }
   
     .hero-main {
