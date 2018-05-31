@@ -616,6 +616,54 @@ footer {
   }
 }
 
+// Blog
+#blog-header {
+  .nav {
+    background-color: @color-violet;
+    color: @color-white;
+    height: 54px;
+    display: flex;
+
+    .nav-content {
+      max-width: 1200px;
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .logo {
+      width: 110px;
+      margin: 0 auto;
+    }
+  }
+}
+
+#blog-content {
+  padding: 50px 20px;
+  max-width: 650px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: @font-size-xl;
+  }
+
+  p, ul {
+    font-family: Georgia, serif;
+    font-size: calc(@font-size-base*1.2);
+    line-height: calc(@font-size-base*1.85);
+  }
+
+  p + ul {
+    margin-top: -10px;
+  }
+
+  li + li {
+    margin-top: 8px;
+  }
+
+
+}
+
 // Responsive
 
 @media only screen  and (min-width: @desktop-m) {

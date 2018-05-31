@@ -471,6 +471,42 @@ footer a:hover {
     transform: translateY(-8px);
   }
 }
+#blog-header .nav {
+  background-color: #301887;
+  color: white;
+  height: 54px;
+  display: flex;
+}
+#blog-header .nav .nav-content {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+#blog-header .nav .logo {
+  width: 110px;
+  margin: 0 auto;
+}
+#blog-content {
+  padding: 50px 20px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+#blog-content h1 {
+  font-size: 2.369rem;
+}
+#blog-content p,
+#blog-content ul {
+  font-family: Georgia, serif;
+  font-size: calc(1.2rem);
+  line-height: calc(1.85rem);
+}
+#blog-content p + ul {
+  margin-top: -10px;
+}
+#blog-content li + li {
+  margin-top: 8px;
+}
 @media only screen and (min-width: 1300px) {
   .step {
     width: 60% !important;

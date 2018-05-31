@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Easiest way to set weekly goals in Slack</title>
+    <meta property="og:title" content="Easiest way to set weekly goals in Slack" />
+    <meta name="description" content="Set weekly goals, share progress and solve problems &amp;#9989; All within Slack. Avoid boring status meetings!">
+    <meta property="og:description" content="Set weekly goals, share progress and solve problems ✅ All within Slack. Avoid boring status meetings!"
+    />
+    <meta property="og:image" content="https://oneteamhq.com/images/oneteam-og-image.png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <meta property="og:image" content="https://oneteamhq.com/images/oneteam-og-image.png" />
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://oneteamhq.com" />
+
+    <link rel="stylesheet"
+          href="../styles/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/animate.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    
+    <!-- Start of Async Drift Code -->
+    <script>
+      !function() {
+        var t;
+        if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+        t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n;
+            return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e, n, o, i;
+          e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+          n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+        });
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('ta6xpdzcevuv');
+    </script>
+    <!-- End of Async Drift Code -->
+    <script>
+      (function() {
+        /* Add this class to any elements you want to use to open Drift.
+          *
+          * Examples:
+          * - <a class="drift-open-chat">Questions? We're here to help!</a>
+          * - <button class="drift-open-chat">Chat now!</button>
+          *
+          * You can have any additional classes on those elements that you
+          * would ilke.
+          */
+        var DRIFT_CHAT_SELECTOR = '.drift-open-chat'
+        /* http://youmightnotneedjquery.com/#ready */
+        function ready(fn) {
+          if (document.readyState != 'loading') {
+            fn();
+          } else if (document.addEventListener) {
+            document.addEventListener('DOMContentLoaded', fn);
+          } else {
+            document.attachEvent('onreadystatechange', function() {
+              if (document.readyState != 'loading')
+                fn();
+            });
+          }
+        }
+        /* http://youmightnotneedjquery.com/#each */
+        function forEachElement(selector, fn) {
+          var elements = document.querySelectorAll(selector);
+          for (var i = 0; i < elements.length; i++)
+            fn(elements[i], i);
+        }
+        function openSidebar(driftApi, event) {
+          event.preventDefault();
+          driftApi.sidebar.open();
+          return false;
+        }
+        ready(function() {
+          drift.on('ready', function(api) {
+            var handleClick = openSidebar.bind(this, api)
+            forEachElement(DRIFT_CHAT_SELECTOR, function(el) {
+              el.addEventListener('click', handleClick);
+            });
+          });
+        });
+      })();
+    </script>
+    
+  </head>
+  <body>
+    <header id="blog-header">
+      <div class="nav">
+        <div class="nav-content">
+        <a href="https://oneteamhq.com"><img src="../images/oneteam_logo_3.svg" class="logo"></a>
+        
+        </div>
+      </div>
+    </header>
+    <section id="blog-content">
+      
+      <h1 id="whyslackisthebiggestupcomingbusinessplatform">Slack platform is a big deal</h1>
+      
+      <p>A lot of current business apps are just glorified HTML forms.</p>
+      
+      <p>Think about it:</p>
+      
+      <ul>
+        <li>Expense reporting software,</li>
+      
+        <li>Bug tracking software,</li>
+      
+        <li>Vacation tracking software,</li>
+      
+        <li>Time tracking software,</li>
+      
+        <li>Employee engagement software,</li>
+      
+        <li>and many more...</li>
+      </ul>
+      
+      <p>As a regular employee, you use these kinds of apps once or twice a month. You get used to play the log in/forgotten password jujitsu.
+        You finally come in, struggle to find the one thing you need to do. </p>
+      
+      <p>Then finally, at last… you find the form &amp; fill it in. Think about it - this step is the one thing that actually matters.
+        All the stuff before and around is just waste.</p>
+      
+      <p>Sure, waste that was necessary until now. But waste, nonetheless.</p>
+      
+      <p>For people on the ground - for people that actually do the work - most non-business critical software is just as a burden.
+        They want to get the work done. They don’t want to learn your new fancy UI. They don’t want to remember yet another login
+        combo. </p>
+      <hr>
+      <h2 id="weareusingtoomuchsoftwareandyettoolittle">We are using too much software - And yet too little.</h2>
+      
+      <p>Every office worker has their core productivity software. Software that lives constantly in one of her browser tabs.</p>
+      
+      <ul>
+        <li>
+          <strong>Photoshop/Sketch</strong>… if you’re a designer.</li>
+      
+        <li>
+          <strong>CRM</strong>… if you’re a sales person.</li>
+      
+        <li>
+          <strong>Code editor</strong>… if you’re a developer.</li>
+      
+        <li>
+          <strong>Hubspot</strong>… if you’re a marketer.</li>
+      
+        <li>
+          <strong>Text editor</strong>… if you’re a copywriter.</li>
+      
+        <li>
+          <strong>Accounting software</strong>… if you’re in finance.</li>
+      </ul>
+      
+      <p>You get my point. This software, obviously, needs UI.</p>
+      
+      <p>But if we carefully examine our month, we don’t interact with 3 business apps. If you’re like me, the number is closer to
+        20.</p>
+      
+      <p>There’s nothing wrong with using 20 business applications. In fact, I believe we should be using even more software. If it
+        augments us and lets us spend more time doing our core job - I’m all up for it.</p>
+      
+      <p>Which leads us to...</p>
+      <hr>
+      <h2 id="theriseofinvisiblesoftware">The rise of invisible software</h2>
+      
+      <p>Invisible software asks me for input, displays some output… and goes away. In some cases, I don’t even need to know that
+        it exists.</p>
+      
+      <p>For example: I don’t need to love your expense reporting software. I happen to use it because I need to buy some stuff on
+        behalf of my company. So there’s your expense software in the middle that helps me process that.</p>
+      
+      <p>But I don’t need to love your software. Maybe, I don’t even need to “touch” it.</p>
+      
+      <p>In fact, expense reporting software will soon run on close to zero touchpoints for most users:</p>
+      
+      <ul>
+        <li>It will know when I purchased something. Automatically.</li>
+      
+        <li>It will receive an itemized receipt from the merchant. Automatically.</li>
+      
+        <li>It will know I was in a meeting with a billable client. So it will apply the expense to the client. In case it won’t know,
+          it will ask me to attach a client. Semi-automatically.</li>
+      
+        <li>And then it will push everything to the accounting system. Automatically.</li>
+      </ul>
+      
+      <p>Zero-to-one touchpoint. Invisible software. Coming soon to the business near you.</p>
+      <hr>
+      <h2 id="whyslackistheinvisibilitycloakforbusinesssoftware">Why Slack is the invisibility cloak for business software</h2>
+      
+      <p>I believe Slack is pulling us closer to the invisible software reality. Why is that?</p>
+      
+      <p>At its core, Slack is a simple communication tool: you talk to your colleagues either directly or via shared channels.</p>
+      
+      <p>But Slack is so much more:</p>
+      
+      <ul>
+        <li>
+          <strong>Ubiquitous:</strong> It’s probably the only software that everyone in the company uses on a daily basis.</li>
+      
+        <li>
+          <strong>Used:</strong> It’s the one software that people actually check. If you want people to see something - Slack is your
+          best option.</li>
+      
+        <li>
+          <strong>Notifications:</strong> It has a very reliable cross-device notification system.</li>
+      
+        <li>
+          <strong>Developer ecosystem:</strong> It has a good set of tools and UI components available to developers. And they’re getting
+          better fast.</li>
+      </ul>
+      
+      <p>Let’s go back to the invisibility theory. Slack provides a platform to run &amp; interact with simple business apps. It has
+        notifications, it has user presence and it has a canvas plus basic UI elements to interact with the user if needed.</p>
+      
+      <p>This means that a simple business app that only consists of standard HTML layout elements like forms can now run fully in
+        Slack. </p>
+      
+      <p>It pings you whenever it needs some input. And it presents information upon request or whenever the context makes sense.
+        </p>
+      
+      <p>The benefits are obvious:</p>
+      
+      <ul>
+        <li>
+          <strong>Managers:</strong> get information from their workers that’s needed</li>
+      
+        <li>
+          <strong>Workers:</strong> can focus on their core job</li>
+      
+        <li>
+          <strong>App developers:</strong> can focus on reducing the interaction with users (instead of increasing engagement as its often
+          the case now)</li>
+      </ul>
+      
+      <p>The app (almost) goes away. And this is as close to invisibility as it gets. Welcome to the future!</p>
+      <hr>
+      <p><strong>About Oneteam:</strong> Oneteam is the simplest way for your team to set weekly goals and report progress. All in Slack. <a href="https://oneteamhq.com">Check it out →</a></p>
+    </section>
+    
+    <footer>
+        Made with ♥️ in Copenhagen by <a href="https://twitter.com/jmarovt" target="_blank">@jmarovt</a> & <a href="https://twitter.com/gbelcec" target="_blank">@gbelcec</a>
+    </footer>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119254906-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-119254906-1');
+    </script>
+
+    <script>
+      var ua = navigator.userAgent.toLowerCase();
+      var isWin7 = ua.indexOf('windows nt 6.1') > 0;
+
+      if (isWin7) {
+        var emojis = document.getElementsByClassName('emoji');
+        console.log(emojis.length);
+        for (var i = 0; i < emojis.length; ++i) {
+          var item = emojis[i];
+          
+          item.style.cssText = "display:none";
+        }
+      }
+      
+    </script>
+    
+    
+  </body>
+</html>
