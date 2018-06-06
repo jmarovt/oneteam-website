@@ -491,6 +491,13 @@ footer a:hover {
   padding: 50px 20px;
   max-width: 650px;
   margin: 0 auto;
+  color: rgba(0, 0, 0, 0.84);
+}
+#blog-content img {
+  max-width: 100%;
+}
+#blog-content img.cover {
+  margin-top: 30px;
 }
 #blog-content h1 {
   font-size: 2.369rem;
@@ -499,10 +506,7 @@ footer a:hover {
 #blog-content ul {
   font-family: Georgia, serif;
   font-size: calc(1.2rem);
-  line-height: calc(1.85rem);
-}
-#blog-content p + ul {
-  margin-top: -10px;
+  line-height: calc(1.9rem);
 }
 #blog-content li + li {
   margin-top: 8px;

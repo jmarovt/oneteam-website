@@ -642,6 +642,15 @@ footer {
   padding: 50px 20px;
   max-width: 650px;
   margin: 0 auto;
+  color: rgba(0, 0, 0, .84);
+
+  img {
+    max-width: 100%;
+    
+    &.cover {
+      margin-top: 30px;
+    }
+  }
 
   h1 {
     font-size: @font-size-xl;
@@ -650,11 +659,7 @@ footer {
   p, ul {
     font-family: Georgia, serif;
     font-size: calc(@font-size-base*1.2);
-    line-height: calc(@font-size-base*1.85);
-  }
-
-  p + ul {
-    margin-top: -10px;
+    line-height: calc(@font-size-base*1.9);
   }
 
   li + li {
@@ -663,6 +668,7 @@ footer {
 
 
 }
+// Blog - END
 
 // Responsive
 
