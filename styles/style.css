@@ -494,13 +494,25 @@ footer a:hover {
   color: rgba(0, 0, 0, 0.84);
 }
 #blog-content img {
-  max-width: 100%;
+  margin-top: 20px;
+  width: 100%;
 }
 #blog-content img.cover {
-  margin-top: 30px;
+  width: 120%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: calc(-10%);
 }
 #blog-content h1 {
   font-size: 2.369rem;
+}
+#blog-content h2 {
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: normal;
+  margin-top: 10px;
+}
+#blog-content h3 {
+  font-size: 1.77rem;
 }
 #blog-content p,
 #blog-content ul {
