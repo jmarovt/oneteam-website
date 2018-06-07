@@ -194,6 +194,11 @@ hr {
 #hero .hero-main .hero-left .cta {
   display: inline-block;
 }
+#hero .hero-main ul {
+  list-style: none;
+  text-align: left;
+  opacity: 0.8;
+}
 #hero .hero-main .hero-right {
   flex-basis: 0;
   flex-grow: 1;
@@ -235,6 +240,18 @@ hr {
 #hero .scroll-down {
   position: absolute;
   bottom: 8vh;
+}
+#hero.alpha {
+  height: auto;
+  background-image: none;
+  background: linear-gradient(#301887, #15b951);
+}
+#hero.alpha .hero-main {
+  margin-top: 80px;
+}
+#hero.alpha .hero-main ul {
+  margin-top: 20px;
+  margin-left: -20px;
 }
 .icon-section {
   width: 1.77rem;

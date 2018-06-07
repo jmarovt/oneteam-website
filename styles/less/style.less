@@ -270,6 +270,12 @@ hr {
       }
     }
 
+    ul {
+      list-style: none;
+      text-align: left;
+      opacity: 0.8;
+    }
+
     .hero-right {
       flex-basis: 0;
       flex-grow: 1;
@@ -317,6 +323,21 @@ hr {
   .scroll-down {
     position: absolute;
     bottom: 8vh;
+  }
+
+  &.alpha {
+    height: auto;
+    background-image: none;
+    background: linear-gradient( @color-violet, darken(@color-green, 15%));
+
+    .hero-main {
+      margin-top: 80px;
+
+      ul {
+        margin-top: 20px;
+        margin-left: -20px;
+      }
+    }
   }
 }
 
