@@ -330,8 +330,12 @@ hr {
     background-image: none;
     background: linear-gradient( @color-violet, darken(@color-green, 15%));
 
+    h1 {
+      font-size: @font-size-lg;
+    }
     .hero-main {
-      margin-top: 80px;
+      margin-top: 50px;
+      margin-bottom: 30px;
 
       ul {
         margin-top: 20px;
@@ -384,8 +388,6 @@ hr {
     background-color: @color-blue;
     border: 3px solid @color-blue;
     background-position: center;
-
-
   }
 
   .warren-buffet {
@@ -460,6 +462,40 @@ hr {
               text-decoration: underline;
             }
           }
+        }
+      }
+    }
+  }
+
+  &.alpha {
+
+    h2 {
+      font-size: @font-size-md;
+    }
+
+    h3 {
+      opacity: 0.8;
+      font-size: @font-size-base;
+      font-weight: normal;
+      margin-top: 3px;
+    }
+
+    .benefit {
+      display: block;
+      text-align: center;
+
+      .icon-section {
+        margin: 0 auto;
+        font-weight: bold;
+        margin-bottom: 15px;
+        width: auto;
+        height: auto;
+
+        .avatar {
+          font-size: @font-size-base;
+          background-color: darken(@color-blue, 10%);
+          border-color: darken(@color-blue, 10%);
+          margin: 0 auto;
         }
       }
     }
@@ -791,8 +827,6 @@ footer {
         padding: 0;
       }
     }
-
-    
   }
 
   #how-it-works {

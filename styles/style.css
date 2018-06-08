@@ -246,8 +246,12 @@ hr {
   background-image: none;
   background: linear-gradient(#301887, #15b951);
 }
+#hero.alpha h1 {
+  font-size: 1.77rem;
+}
 #hero.alpha .hero-main {
-  margin-top: 80px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 #hero.alpha .hero-main ul {
   margin-top: 20px;
@@ -346,6 +350,32 @@ hr {
 }
 .benefits .mini-benefits .benefit p.avatar a:hover {
   text-decoration: underline;
+}
+.benefits.alpha h2 {
+  font-size: 1.33rem;
+}
+.benefits.alpha h3 {
+  opacity: 0.8;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 3px;
+}
+.benefits.alpha .benefit {
+  display: block;
+  text-align: center;
+}
+.benefits.alpha .benefit .icon-section {
+  margin: 0 auto;
+  font-weight: bold;
+  margin-bottom: 15px;
+  width: auto;
+  height: auto;
+}
+.benefits.alpha .benefit .icon-section .avatar {
+  font-size: 1rem;
+  background-color: #3c3bd4;
+  border-color: #3c3bd4;
+  margin: 0 auto;
 }
 #how-it-works .three-steps {
   text-align: left;
