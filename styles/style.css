@@ -246,6 +246,9 @@ hr {
   background-image: none;
   background: linear-gradient(#301887, #15b951);
 }
+#hero.alpha .hero-cover {
+  padding: 2%;
+}
 #hero.alpha h1 {
   font-size: 1.77rem;
 }
