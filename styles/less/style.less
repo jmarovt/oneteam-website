@@ -45,6 +45,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-weight: @font-weight-normal;
+  background-color: darken(@color-white, 0.6%);
 
   &.in-transition {
     transition: transform 900ms ease;
@@ -631,12 +632,20 @@ hr {
   }
 }
 
+.content {
+  min-height: calc(~"100vh - 55px");
+}
+
 footer {
   background-color: @color-violet;
+  height: 55px;
   text-align: center;
   font-size: @font-size-sm;
-  padding: @font-size-base 0;
+  padding: 0;
   color: fadeout(@color-white, 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   a {
     color: fadeout(@color-white, 20%);

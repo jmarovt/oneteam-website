@@ -8,6 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-weight: 400;
+  background-color: #fdfdfd;
 }
 html.in-transition,
 body.in-transition {
@@ -479,12 +480,19 @@ hr {
   font-weight: 400;
   opacity: 0.8;
 }
+.content {
+  min-height: calc(100vh - 55px);
+}
 footer {
   background-color: #301887;
+  height: 55px;
   text-align: center;
   font-size: 0.75rem;
-  padding: 1rem 0;
+  padding: 0;
   color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer a {
   color: rgba(255, 255, 255, 0.8);
