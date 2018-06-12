@@ -22,8 +22,14 @@ h5 {
   margin: 0;
 }
 h1 {
-  font-size: 2.369rem;
+  font-size: 1.95rem;
   font-weight: 600;
+}
+h2 {
+  font-size: 1.56rem;
+}
+h3 {
+  font-size: 1.25rem;
 }
 h4 {
   font-size: 1rem;
@@ -31,7 +37,7 @@ h4 {
   line-height: 1.4;
 }
 h4.avatar {
-  margin: 0 0 0.75rem 0;
+  margin: 2px 0 0.75rem 0;
 }
 h4.avatar span {
   font-weight: normal;
@@ -46,13 +52,13 @@ h5 {
   line-height: 1.4;
 }
 hr {
-  width: 3.157rem;
+  width: 3.05rem;
   border: 0;
   border-top: 2px solid #b9b9ef;
-  margin: 1.77rem auto 1.77rem auto;
+  margin: 1.56rem auto 1.56rem auto;
 }
 .body-section {
-  padding: 4.2rem 0 4.2rem 0;
+  padding: 3.8rem 0 3.8rem 0;
   background-color: #fdfdfd;
   text-align: center;
 }
@@ -76,10 +82,10 @@ hr {
   display: none !important;
 }
 .signup-cta {
-  margin-top: 2.369rem;
+  margin-top: 1.95rem;
   background-color: white;
   border-radius: 4px;
-  padding: 0.75rem 1.33rem;
+  padding: 0.75rem 1.25rem;
   text-decoration: none;
   color: #403f4c;
   display: inline-block;
@@ -110,7 +116,7 @@ hr {
 .faq-item {
   width: 45%;
   text-align: left;
-  margin: 2.369rem auto 0 auto;
+  margin: 1.95rem auto 0 auto;
   display: flex;
 }
 .faq-item h3 {
@@ -140,7 +146,7 @@ hr {
 }
 #hero .hero-cover {
   background-color: rgba(48, 24, 135, 0.85);
-  padding: 4.2rem;
+  padding: 3.8rem;
   height: 100%;
 }
 #hero .nav {
@@ -170,7 +176,7 @@ hr {
   text-decoration: underline;
 }
 #hero .nav .menu li + li {
-  margin-left: 2.369rem;
+  margin-left: 1.95rem;
 }
 #hero.thin {
   padding: 2% 4% 4% 4%;
@@ -181,7 +187,7 @@ hr {
   margin-top: 4%;
 }
 #hero .hero-main {
-  margin: 20vh 0 4.2rem 0;
+  margin: 20vh 0 3.8rem 0;
 }
 #hero .hero-main .hero-left {
   margin: 0 auto;
@@ -248,10 +254,10 @@ hr {
   background: linear-gradient(#301887, #15b951);
 }
 #hero.alpha .hero-cover {
-  padding: 2%;
+  padding: 3%;
 }
 #hero.alpha h1 {
-  font-size: 1.77rem;
+  font-size: 1.56rem;
 }
 #hero.alpha .hero-main {
   margin-top: 50px;
@@ -262,12 +268,7 @@ hr {
   margin-left: -20px;
 }
 .icon-section {
-  width: 1.77rem;
-  height: 1.77rem;
   margin-right: 0.75rem;
-}
-.icon-section.avatar {
-  margin-right: 1.77rem;
 }
 .icon-section.avatar h4 {
   margin-top: 1rem;
@@ -279,9 +280,10 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.77rem;
-  height: 1.77rem;
+  width: 1.95rem;
+  height: 1.95rem;
   font-size: 0.75rem;
+  font-weight: bold;
   background-color: #6665DD;
   color: white;
   border-radius: 50%;
@@ -291,9 +293,16 @@ hr {
   background-color: #1be566;
   opacity: 0.7;
 }
+.icon-section .circle.avatar {
+  width: calc(2.4375rem);
+  height: calc(2.4375rem);
+}
+.icon-section .circle.text {
+  font-size: 1rem;
+}
 .icon-section .avatar {
-  width: 2.369rem;
-  height: 2.369rem;
+  width: 1.95rem;
+  height: 1.95rem;
   background-size: 1.5rem;
   background-repeat: no-repeat;
   background-color: #6665DD;
@@ -322,7 +331,7 @@ hr {
   background-image: url('../images/testimonials/paul-adams.png');
 }
 .text-section h3 {
-  margin-top: 3px;
+  margin-top: 2px;
 }
 .text-section h3 .less-important {
   font-weight: 400;
@@ -333,14 +342,14 @@ hr {
 .benefits .mini-benefits {
   width: 85%;
   margin: 0 auto;
-  margin-top: 1.77rem;
+  margin-top: 1.56rem;
   display: flex;
   flex-wrap: wrap;
 }
 .benefits .mini-benefits .benefit {
   display: flex;
   width: calc(29.33333333%);
-  margin-top: 1.77rem;
+  margin-top: 1.56rem;
   text-align: left;
   padding: 0 2%;
 }
@@ -356,7 +365,7 @@ hr {
   text-decoration: underline;
 }
 .benefits.alpha h2 {
-  font-size: 1.33rem;
+  font-size: 1.25rem;
 }
 .benefits.alpha h3 {
   opacity: 0.8;
@@ -375,7 +384,7 @@ hr {
   width: auto;
   height: auto;
 }
-.benefits.alpha .benefit .icon-section .avatar {
+.benefits.alpha .benefit .icon-section .circle {
   font-size: 1rem;
   background-color: #3c3bd4;
   border-color: #3c3bd4;
@@ -384,7 +393,7 @@ hr {
 #how-it-works .three-steps {
   text-align: left;
   margin: 0 auto;
-  margin-top: 3.157rem;
+  margin-top: 3.05rem;
 }
 #how-it-works .three-steps .step {
   display: flex;
@@ -421,16 +430,16 @@ hr {
 #how-it-works .three-steps .step .feature {
   display: flex;
   width: 90%;
-  margin-top: 2.369rem;
+  margin-top: 1.95rem;
 }
 #how-it-works .three-steps .step .feature.benefit {
   width: 89%;
   margin-top: 1rem;
-  margin-left: calc(2.52rem);
+  margin-left: calc(2.7rem);
 }
 #how-it-works .three-steps .step .feature.benefit h4 {
   background: url('../images/smudge.svg') center center no-repeat;
-  background-size: 100% 3.157rem;
+  background-size: 100% 3.05rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   margin-left: -0.5rem;
@@ -447,7 +456,7 @@ hr {
   display: block;
   flex: 0 0 100%;
   width: 26px;
-  margin: 1.77rem auto;
+  margin: 1.56rem auto;
   opacity: 0.2;
 }
 #how-it-works .step + .step {
@@ -464,7 +473,7 @@ hr {
   max-width: calc(32%) !important;
 }
 #bottom-cta {
-  padding: 5.6rem inherit;
+  padding: 4.76rem inherit;
   margin: 0 auto;
   text-align: center;
   color: white;
@@ -472,7 +481,7 @@ hr {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%234a5cf9' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 #bottom-cta .signup-cta {
-  margin-top: 1.77rem;
+  margin-top: 1.56rem;
 }
 #bottom-cta h3 {
   margin-top: 3px;
@@ -500,6 +509,18 @@ footer a {
 }
 footer a:hover {
   color: white;
+}
+.collapsible {
+  cursor: pointer;
+}
+.collapsible:hover {
+  text-decoration: underline;
+}
+/* Style the collapsible content. Note: hidden by default */
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 @-webkit-keyframes bob {
   0% {
@@ -562,7 +583,7 @@ footer a:hover {
   margin-left: calc(-10%);
 }
 #blog-content h1 {
-  font-size: 2.369rem;
+  font-size: 1.95rem;
 }
 #blog-content h2 {
   color: rgba(0, 0, 0, 0.54);
@@ -570,7 +591,7 @@ footer a:hover {
   margin-top: 10px;
 }
 #blog-content h3 {
-  font-size: 1.77rem;
+  font-size: 1.56rem;
 }
 #blog-content p,
 #blog-content ul {
@@ -601,13 +622,13 @@ footer a:hover {
     background-position-x: 50%;
   }
   #hero .hero-cover {
-    padding: 8%;
+    padding: 8% !important;
   }
   #hero .menu {
     display: none;
   }
   #hero .chevron {
-    margin-top: 2.369rem;
+    margin-top: 1.95rem;
   }
   #hero .chevron.scroll-down {
     bottom: 5vh;
@@ -616,7 +637,7 @@ footer a:hover {
     display: block;
   }
   #hero .hero-main h1 {
-    font-size: 1.77rem;
+    font-size: 1.56rem;
   }
   #hero .hero-main h2 {
     width: 100%;
@@ -634,7 +655,7 @@ footer a:hover {
     text-align: center;
   }
   hr {
-    margin: 2.369rem auto;
+    margin: 1.95rem auto;
   }
   .benefits .mini-benefits {
     display: block;
@@ -649,7 +670,7 @@ footer a:hover {
     width: 100%;
   }
   #how-it-works .three-steps .step .step-visual {
-    margin-top: 1.77rem;
+    margin-top: 1.56rem;
   }
   #how-it-works .three-steps .step .step-visual .feature-image {
     max-width: 90%;
@@ -658,10 +679,10 @@ footer a:hover {
     width: 100%;
   }
   #how-it-works .three-steps .step + .step {
-    margin: 3.157rem 0 0 0;
+    margin: 3.05rem 0 0 0;
   }
   #how-it-works .three-steps .chevron {
-    margin: 1.77rem auto !important;
+    margin: 1.56rem auto !important;
   }
   #social-proof-2 .tweets {
     width: 100%;

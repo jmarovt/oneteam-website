@@ -8,6 +8,7 @@
 
 // Main dimensions
 @padding-thin: 2%;
+@padding-mid: 3%;
 @padding-main: 4%;
 @padding-section: 5%;
 @padding-main-mobile: 8%;
@@ -18,12 +19,12 @@
 @font-size-xs: 0.563rem;
 @font-size-sm: 0.75rem;
 @font-size-base: 1rem;
-@font-size-md: 1.33rem;
-@font-size-lg: 1.77rem;
-@font-size-xl: 2.369rem;
-@font-size-xxl: 3.157rem;
-@font-size-xxxl: 4.2rem;
-@font-size-xxxxl: 5.6rem;
+@font-size-md: 1.25rem;
+@font-size-lg: 1.56rem;
+@font-size-xl: 1.95rem;
+@font-size-xxl: 3.05rem;
+@font-size-xxxl: 3.8rem;
+@font-size-xxxxl: 4.76rem;
 
 // Font weights
 @font-weight-normal: 400;
@@ -61,13 +62,21 @@ h1 {
   font-weight: @font-weight-bold;
 }
 
+h2 {
+  font-size: @font-size-lg;
+}
+
+h3 {
+  font-size: @font-size-md;
+}
+
 h4 {
   font-size: @font-size-base;
   margin-top: .2rem;
   line-height: 1.4;
 
   &.avatar {
-    margin: 0 0 0.75rem 0;
+    margin: 2px 0 0.75rem 0;
 
     span {
       font-weight: normal;
@@ -332,7 +341,7 @@ hr {
     background: linear-gradient( @color-violet, darken(@color-green, 15%));
 
     .hero-cover {
-      padding: @padding-thin;
+      padding: @padding-mid;
     }
 
     h1 {
@@ -351,12 +360,9 @@ hr {
 }
 
 .icon-section {
-  width: @font-size-lg;
-  height: @font-size-lg;
   margin-right: @font-size-sm;
 
   &.avatar {
-    margin-right: @font-size-lg;
 
     h4 {
       margin-top: @font-size-base;
@@ -371,9 +377,10 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: @font-size-lg;
-    height: @font-size-lg;
+    width: @font-size-xl;
+    height: @font-size-xl;
     font-size: @font-size-sm;
+    font-weight: bold;
     background-color: @color-blue;
     color: @color-white;
     border-radius: 50%;
@@ -382,6 +389,15 @@ hr {
     &.green {
       background-color: darken(@color-green, 5%);
       opacity: 0.7;
+    }
+
+    &.avatar {
+      width: calc(@font-size-xl * 1.25);
+      height: calc(@font-size-xl * 1.25);
+    }
+
+    &.text {
+      font-size: @font-size-base;
     }
   }
 
@@ -426,7 +442,7 @@ hr {
 
 .text-section {
   h3 {
-    margin-top: 3px;
+    margin-top: 2px;
     
     .less-important {
       font-weight: @font-weight-normal;
@@ -496,7 +512,7 @@ hr {
         width: auto;
         height: auto;
 
-        .avatar {
+        .circle {
           font-size: @font-size-base;
           background-color: darken(@color-blue, 10%);
           border-color: darken(@color-blue, 10%);
@@ -560,7 +576,7 @@ hr {
         &.benefit {
           width: 89%;
           margin-top: @font-size-base;
-          margin-left: calc(@font-size-lg + @font-size-sm);
+          margin-left: calc(@font-size-xl + @font-size-sm);
 
           h4 {
             background: url('../images/smudge.svg') center center no-repeat;
@@ -655,6 +671,21 @@ footer {
       color: @color-white;
     }
   }
+}
+
+.collapsible {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsible-content {
+      max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 @-webkit-keyframes bob {
@@ -781,7 +812,7 @@ footer {
     background-position-x: 50%;
 
     .hero-cover {
-      padding: @padding-main-mobile;
+      padding: @padding-main-mobile !important;
     }
 
     .menu {
