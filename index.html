@@ -636,17 +636,12 @@
       var i;
   
       for (i = 0; i < coll.length; i++) {
-        console.log(coll.length);
         coll[i].addEventListener("click", function () {
-          console.log('kdfjkd');
           this.classList.toggle("active");
           var content = this.nextElementSibling;
-          console.log(content);
           if (content.style.maxHeight) {
-            console.log('bla');
             content.style.maxHeight = null;
           } else {
-            console.log('bum');
             content.style.maxHeight = content.scrollHeight + "px";
           }
         });
