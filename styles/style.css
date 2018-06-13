@@ -256,9 +256,6 @@ hr {
 #hero.alpha .hero-cover {
   padding: 3%;
 }
-#hero.alpha h1 {
-  font-size: 1.56rem;
-}
 #hero.alpha .hero-main {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -363,9 +360,6 @@ hr {
 }
 .benefits .mini-benefits .benefit p.avatar a:hover {
   text-decoration: underline;
-}
-.benefits.alpha h2 {
-  font-size: 1.25rem;
 }
 .benefits.alpha h3 {
   opacity: 0.8;
