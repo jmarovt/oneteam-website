@@ -384,11 +384,6 @@ hr {
   border-color: #3c3bd4;
   margin: 0 auto;
 }
-.benefits.alpha .subtext {
-  margin-top: 1.95rem;
-  font-size: calc(0.85rem);
-  opacity: 0.85;
-}
 #how-it-works .three-steps {
   text-align: left;
   margin: 0 auto;
