@@ -143,11 +143,14 @@ hr {
   background-image: url("../images/cover-image-nature.jpg");
   background-size: cover;
   height: 91vh;
+  max-height: 700px;
+  display: flex;
 }
 #hero .hero-cover {
   background-color: rgba(48, 24, 135, 0.85);
   padding: 3.8rem;
-  height: 100%;
+  width: 100%;
+  position: relative;
 }
 #hero .nav {
   margin: 0 auto;
@@ -246,7 +249,7 @@ hr {
 }
 #hero .scroll-down {
   position: absolute;
-  bottom: 8vh;
+  bottom: 1.95rem;
 }
 #hero.alpha {
   height: auto;

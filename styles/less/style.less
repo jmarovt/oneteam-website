@@ -210,11 +210,14 @@ hr {
   background-image: url("../images/cover-image-nature.jpg");
   background-size: cover;
   height: 91vh;
+  max-height: 700px;
+  display: flex;
 
   .hero-cover {
     background-color: fadeout(@color-violet, 15%);
     padding: @font-size-xxxl;
-    height: 100%;
+    width: 100%;
+    position:relative;
   }
 
   .nav {
@@ -332,7 +335,7 @@ hr {
 
   .scroll-down {
     position: absolute;
-    bottom: 8vh;
+    bottom: @font-size-xl;
   }
 
   &.alpha {
