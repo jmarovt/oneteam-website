@@ -55,7 +55,7 @@ hr {
   width: 3.05rem;
   border: 0;
   border-top: 2px solid #b9b9ef;
-  margin: 1.56rem auto 1.56rem auto;
+  margin: 1.95rem auto 1.95rem auto;
 }
 .body-section {
   padding: 3.8rem 0 3.8rem 0;
@@ -595,13 +595,31 @@ footer a:hover {
   font-size: 1.56rem;
 }
 #blog-content p,
-#blog-content ul {
+#blog-content ul,
+#blog-content ol {
   font-family: Georgia, serif;
   font-size: calc(1.2rem);
   line-height: calc(1.9rem);
 }
+#blog-content p + ul,
+#blog-content p + ol {
+  margin-top: -5px;
+  margin-bottom: 1.95rem;
+}
 #blog-content li + li {
   margin-top: 8px;
+}
+#blog-content hr {
+  margin: 3.05rem auto 3.05rem auto;
+}
+#blog-content .framed-small-text {
+  border: 2px solid #6f6d84;
+  background-color: #f2f2f4;
+  padding: 0.563rem 1.56rem;
+}
+#blog-content .framed-small-text p,
+#blog-content .framed-small-text ul {
+  font-size: 0.95rem;
 }
 @media only screen and (min-width: 1300px) {
   .step {

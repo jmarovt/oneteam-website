@@ -98,7 +98,7 @@ hr {
   width: @font-size-xxl;
   border: 0;
   border-top: 2px solid lighten(@color-blue, 20%);
-  margin: @font-size-lg auto @font-size-lg auto;
+  margin: @font-size-xl auto @font-size-xl auto;
 }
 
 .body-section {
@@ -771,14 +771,33 @@ footer {
     font-size: @font-size-lg;
   }
 
-  p, ul {
+  p, ul, ol {
     font-family: Georgia, serif;
     font-size: calc(@font-size-base*1.2);
     line-height: calc(@font-size-base*1.9);
   }
 
+  p + ul, p + ol {
+    margin-top: -5px;
+    margin-bottom: @font-size-xl;
+  }
+
   li + li {
     margin-top: 8px;
+  }
+
+  hr {
+    margin: @font-size-xxl auto @font-size-xxl auto;
+  }
+
+  .framed-small-text {
+    p, ul {
+      font-size: 0.95rem;
+    }
+    
+    border: 2px solid lighten(@color-dark, 20%);
+    background-color: lighten(@color-dark, 68%);
+    padding: @font-size-xs @font-size-lg;
   }
 
 
