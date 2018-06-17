@@ -621,6 +621,13 @@ footer a:hover {
 #blog-content .framed-small-text ul {
   font-size: 0.95rem;
 }
+#blog-content .framed-small-text li + li {
+  margin-top: 0;
+}
+#blog-content .framed-small-text p + ul {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
 @media only screen and (min-width: 1300px) {
   .step {
     width: 60% !important;
