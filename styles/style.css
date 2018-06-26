@@ -588,6 +588,20 @@ footer a:hover {
   border-radius: 2px;
   margin-top: 0px;
 }
+#blog-content blockquote {
+  color: rgba(0, 0, 0, 0.54);
+  font-style: italic;
+  font-size: 1.56rem;
+  margin-top: 3.05rem;
+  margin-bottom: 3.05rem;
+}
+#blog-content .table-of-contents a {
+  color: #301887;
+  text-decoration: none;
+}
+#blog-content .table-of-contents a:hover {
+  text-decoration: underline;
+}
 #blog-content .youtube-embed {
   position: relative;
   padding-bottom: 56.25%;
@@ -598,7 +612,7 @@ footer a:hover {
 #blog-content h2 {
   color: rgba(0, 0, 0, 0.54);
   font-weight: normal;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 #blog-content h3 {
   font-size: 1.56rem;

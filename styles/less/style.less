@@ -5,6 +5,7 @@
 @color-violet-old: #3E21BC;
 @color-violet: #301887;
 @color-green: #32E875;
+@color-grey: rgba(0, 0, 0, .54);
 
 // Main dimensions
 @padding-thin: 2%;
@@ -763,6 +764,26 @@ footer {
     }
   }
 
+  blockquote {
+    color: @color-grey;
+    font-style: italic;
+    font-size: @font-size-lg;
+    margin-top: @font-size-xxl;
+    margin-bottom: @font-size-xxl;
+  }
+
+  .table-of-contents {
+    
+    a {
+      color: @color-violet;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   .youtube-embed {
     position: relative;
     padding-bottom: 56.25%;
@@ -773,9 +794,9 @@ footer {
   }
 
   h2 {
-    color: rgba(0, 0, 0, .54);
+    color: @color-grey;
     font-weight: normal;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   h3 {
