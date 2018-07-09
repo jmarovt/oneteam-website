@@ -248,7 +248,7 @@ hr {
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
-#hero .scroll-down {
+#hero .arrow-hero {
   position: absolute;
   bottom: 1.95rem;
 }
@@ -522,6 +522,13 @@ footer a:hover {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+.opacity-50 {
+  opacity: 0.5;
+}
+code {
+  font-weight: bold;
+  color: red;
 }
 @-webkit-keyframes bob {
   0% {
