@@ -570,7 +570,6 @@ code {
 }
 .flex {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .youtube-embed {
@@ -616,6 +615,25 @@ code {
   box-shadow: 0 1px 2px 0 rgba(64, 63, 76, 0.3);
   border-radius: 2px;
   margin-top: 0px;
+}
+#blog-content .author {
+  margin-top: 40px;
+}
+#blog-content .author a {
+  color: rgba(0, 0, 0, 0.84);
+  text-decoration: none;
+}
+#blog-content .author a:hover {
+  text-decoration: underline;
+}
+#blog-content .author img {
+  margin: 0 10px 0 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+#blog-content .author .bio {
+  opacity: 0.5;
 }
 #blog-content blockquote {
   color: rgba(0, 0, 0, 0.54);

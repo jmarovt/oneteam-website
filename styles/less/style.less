@@ -1,4 +1,5 @@
-// Colors
+// START Colors
+
 @color-blue: #6665DD;
 @color-white: white;
 @color-dark: #403f4c;
@@ -7,37 +8,52 @@
 @color-green: #32E875;
 @color-grey: rgba(0, 0, 0, .54);
 
-// Main dimensions
+// END Colors
+
+// START Main dimensions
+
 @padding-thin: 2%;
 @padding-mid: 3%;
 @padding-main: 4%;
 @padding-section: 5%;
 @padding-main-mobile: 8%;
 
-// Font sizes
+// END Main dimensions
+
+// START Font sizes
+
 @font-size-root: 16px;
 @font-size-xxs: 0.423rem;
 @font-size-xs: 0.563rem;
 @font-size-sm: 0.75rem;
-@font-size-base: 1rem;
 @font-size-md: 1.25rem;
 @font-size-lg: 1.56rem;
 @font-size-xl: 1.95rem;
+@font-size-base: 1rem;
 @font-size-xxl: 3.05rem;
 @font-size-xxxl: 3.8rem;
 @font-size-xxxxl: 4.76rem;
 
-// Font weights
+// END Font sizes
+
+// START Font weights
+
 @font-weight-normal: 400;
 @font-weight-bold: 600;
 
-// Screen Sizes
+// END Font weights
+
+// START Screen Sizes
+
 @phone: 440px;
 @tablet: 768px;
 @desktop-m: 1300px;
 @desktop-l: 1824px;
 
-// Generic components
+// END Screen Sizes
+
+// START Main
+
 html, body {
   margin: 0;
   color: @color-dark;
@@ -713,6 +729,8 @@ code {
   color: red;
 }
 
+// END Main
+
 // START Animations
 
 @-webkit-keyframes bob {
@@ -750,7 +768,6 @@ code {
 
 .flex {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -808,6 +825,30 @@ code {
       box-shadow: 0 1px 2px 0 fadeOut(@color-dark, 70%);
       border-radius: 2px;
       margin-top: 0px;
+    }
+  }
+
+  .author {
+    margin-top: 40px;
+
+    a {
+      color: rgba(0, 0, 0, .84);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    img {
+      margin: 0 10px 0 0;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+
+    .bio {
+      opacity: 0.5;
     }
   }
 
