@@ -271,17 +271,31 @@ hr {
   .hero-main {
     margin: 20vh 0 @font-size-xxxl 0;
 
-    .hero-left {
+    .hero-two-columns {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 6%;
+    }
+
+    .hero-center {
       margin: 0 auto;
       text-align: center;
       max-width: 700px;
-      display: flex;
       align-items: center;
-      flex-basis: 0;
-      flex-grow: 1;
 
       .cta {
         display: inline-block;
+      }
+    }
+
+    .hero-left {
+
+      h2 {
+        margin-left: 0;
+        width: 80%;
+        max-width: 500px;
+        line-height: 1.5;
+        font-size: @font-size-md;
       }
     }
 
@@ -301,7 +315,7 @@ hr {
       line-height: 1.4;
       font-weight: @font-weight-normal;
       width: 65%;
-      opacity: 0.8;
+      opacity: 0.7;
       margin: 5px auto 0 auto;
 
       a {
@@ -346,7 +360,8 @@ hr {
     background: linear-gradient( @color-violet, darken(@color-green, 15%));
 
     .hero-cover {
-      padding: @padding-mid;
+      padding: @font-size-xxxl;
+      background: linear-gradient( @color-violet, darken(@color-violet-old, 15%)) !important;
     }
 
     .hero-main {
@@ -698,6 +713,8 @@ code {
   color: red;
 }
 
+// START Animations
+
 @-webkit-keyframes bob {
   0% {
     -webkit-transform: translateY(-8px);
@@ -727,7 +744,28 @@ code {
   }
 }
 
-// Blog
+// END Animations
+
+// START Helper classes 
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.youtube-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+// END Helper classes
+
+// START Blog
 #blog-header {
   .nav {
     background-color: @color-violet;
@@ -793,11 +831,6 @@ code {
     }
   }
 
-  .youtube-embed {
-    position: relative;
-    padding-bottom: 56.25%;
-  }
-
   h1 {
     font-size: @font-size-xl;
   }
@@ -850,9 +883,9 @@ code {
     padding: @font-size-xs @font-size-lg;
   }
 }
-// Blog - END
+// END Blog
 
-// Responsive
+// START Responsive
 
 @media only screen  and (min-width: @desktop-m) {
   .step {
@@ -905,7 +938,7 @@ code {
         width: 100%;
       }
 
-      .hero-left {
+      .hero-center {
         .hero-text {
           width: 100%;
         }
@@ -983,3 +1016,5 @@ code {
     width: 100%;
   }
 }
+
+// END Responsive

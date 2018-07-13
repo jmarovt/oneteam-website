@@ -193,17 +193,26 @@ hr {
 #hero .hero-main {
   margin: 20vh 0 3.8rem 0;
 }
-#hero .hero-main .hero-left {
+#hero .hero-main .hero-two-columns {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 6%;
+}
+#hero .hero-main .hero-center {
   margin: 0 auto;
   text-align: center;
   max-width: 700px;
-  display: flex;
   align-items: center;
-  flex-basis: 0;
-  flex-grow: 1;
 }
-#hero .hero-main .hero-left .cta {
+#hero .hero-main .hero-center .cta {
   display: inline-block;
+}
+#hero .hero-main .hero-left h2 {
+  margin-left: 0;
+  width: 80%;
+  max-width: 500px;
+  line-height: 1.5;
+  font-size: 1.25rem;
 }
 #hero .hero-main ul {
   list-style: none;
@@ -219,7 +228,7 @@ hr {
   line-height: 1.4;
   font-weight: 400;
   width: 65%;
-  opacity: 0.8;
+  opacity: 0.7;
   margin: 5px auto 0 auto;
 }
 #hero .hero-main h2 a {
@@ -258,7 +267,8 @@ hr {
   background: linear-gradient(#301887, #15b951);
 }
 #hero.alpha .hero-cover {
-  padding: 3%;
+  padding: 3.8rem;
+  background: linear-gradient(#301887, #29167b) !important;
 }
 #hero.alpha .hero-main {
   margin-top: 50px;
@@ -558,6 +568,18 @@ code {
     transform: translateY(-8px);
   }
 }
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.youtube-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.text-left {
+  text-align: left;
+}
 #blog-header .nav {
   background-color: #301887;
   color: white;
@@ -608,10 +630,6 @@ code {
 }
 #blog-content .table-of-contents a:hover {
   text-decoration: underline;
-}
-#blog-content .youtube-embed {
-  position: relative;
-  padding-bottom: 56.25%;
 }
 #blog-content h1 {
   font-size: 1.95rem;
@@ -698,7 +716,7 @@ code {
   #hero .hero-main h2 {
     width: 100%;
   }
-  #hero .hero-main .hero-left .hero-text {
+  #hero .hero-main .hero-center .hero-text {
     width: 100%;
   }
   .cta {
