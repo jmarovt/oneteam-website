@@ -194,7 +194,7 @@ hr {
   margin: 20vh 0 3.8rem 0;
 }
 #hero .hero-main .hero-two-columns {
-  width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 6%;
 }
